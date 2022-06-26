@@ -71,13 +71,13 @@ public class RESTAPIClient {
 		//Average of response time for a single client/thread
 		long avgGetTickerData = 0L;
 
-		HttpClient httpClient = HttpClientBuilder.create().build();
+		//HttpClient httpClient = HttpClientBuilder.create().build();
 		//run for MAX_RUN_TIME_MINUTES minutes
 		while (System.nanoTime() < endRunTime) {
 
 			//ToDo: Tried to avoid creating new client every time
 			//The current program was hanging after 2 requests from the same client
-			//HttpClient httpClient = HttpClientBuilder.create().build();
+			HttpClient httpClient = HttpClientBuilder.create().build();
 			long start = System.currentTimeMillis();
 
 			//trying with 2 tickers, even-odd positions
