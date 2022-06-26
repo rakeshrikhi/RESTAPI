@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.rikhi.client</groupId>
+  <artifactId>client-rest</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>restclient</name>
+  <description>rest api client</description>
+  
+  <dependencies>
+ 	<dependency>
+		<groupId>org.apache.httpcomponents.core5</groupId>
+		<artifactId>httpcore5</artifactId>
+		<version>5.1.3</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.httpcomponents</groupId>
+		<artifactId>httpclient</artifactId>
+		<version>4.5.13</version>
+	</dependency>
+  </dependencies>
+
+</project>
