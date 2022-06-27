@@ -13,6 +13,7 @@ Docker file is also provided- but not tested.
 
 Command-
 java -jar client-rest-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+Performance Checks are in the form ofJunit Test Cases for CI monitoring  
 
 HighLevelDesign-
 The UML Class diagram of the package is available in png file at top folder. https://github.com/rakeshrikhi/RESTAPI/blob/main/RESTAPI.umlcd.png
