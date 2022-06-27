@@ -2,7 +2,7 @@
 RESTAPI Experimentation
 
 Introduction--
-This is a sample implementation of Access and Performance Testing framework for REST APIs
+This is a sample implementation of Access and Performance Testing framework for REST APIs.
 I have taken Kraken exchange's public APIs as an example
 
 Dependencies--
