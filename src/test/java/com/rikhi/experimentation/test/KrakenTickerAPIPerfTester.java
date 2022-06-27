@@ -20,12 +20,12 @@ public class KrakenTickerAPIPerfTester {
 	
 	@Test
 	public void testAvgRequestExecTimePerClient() {
-		org.junit.Assert.assertTrue(api.perfMetrices.avgRequestExecTimePerClient < api.perfMetrices.permissibleAvgRequestExecTimePerClient);
+		org.junit.Assert.assertTrue(api.perfMetrics.avgRequestExecTimePerClient < api.perfMetrics.permissibleAvgRequestExecTimePerClient);
 	}
 	
 	@Test
 	public void testSuccessfulResponsesPercent() {
-		org.junit.Assert.assertTrue(api.perfMetrices.successfulResponsesPercent > api.perfMetrices.permissibleSuccessfulResponsesPercent);
+		org.junit.Assert.assertTrue(api.perfMetrics.successfulResponsesPercent > api.perfMetrics.permissibleSuccessfulResponsesPercent);
 	}
 
 }

@@ -48,9 +48,9 @@ public abstract class KrakenAPINoArgsPerfCollector extends APIPerfCollector{
 		}
 		
 		printMessage("runTickerDataAPIConcurrently Avg:"+avgForAPI);
-		perfMetrices.avgRequestExecTimePerClient=avgForAPI;
-		perfMetrices.successfulResponsesPercent=
-				(100*(perfMetrices.numberOfSuccessfulResponses.get()))/perfMetrices.numberOfRequests.get();
+		perfMetrics.avgRequestExecTimePerClient=avgForAPI;
+		perfMetrics.successfulResponsesPercent=
+				(100*(perfMetrics.numberOfSuccessfulResponses.get()))/perfMetrics.numberOfRequests.get();
 		
 		try {
 			executorService.awaitTermination(10, TimeUnit.SECONDS);//wait for 10 seconds
@@ -60,7 +60,7 @@ public abstract class KrakenAPINoArgsPerfCollector extends APIPerfCollector{
 		}
 		executorService.shutdownNow();
 		
-		printMessage("perfMetrices:"+perfMetrices);
+		printMessage("perfMetrics:"+perfMetrics);
 
 	}
 	
@@ -87,18 +87,18 @@ public abstract class KrakenAPINoArgsPerfCollector extends APIPerfCollector{
 			int response = processRequest(httpClient);
 			long end = System.currentTimeMillis();
 			long timeTaken = end - start;
-			perfMetrices.numberOfRequests.incrementAndGet();
+			perfMetrics.numberOfRequests.incrementAndGet();
 			
 			if(response==200) { //storing only successful request stats
 				++requestCount;
-				perfMetrices.numberOfSuccessfulResponses.incrementAndGet();
+				perfMetrics.numberOfSuccessfulResponses.incrementAndGet();
 				avgGetTickerData = (avgGetTickerData * (requestCount - 1) + timeTaken) / requestCount;
-				printMessage("Total Request Counter:"+perfMetrices.numberOfRequests.get()
+				printMessage("Total Request Counter:"+perfMetrics.numberOfRequests.get()
 							+"this Thread Request Counter:"+requestCount 
 							+ "--" + response + "--" + (timeTaken) + "ms"
 							+ " running average:" + avgGetTickerData);
 			}else {
-				perfMetrices.numberOfUnsuccessfulResponses.incrementAndGet();
+				perfMetrics.numberOfUnsuccessfulResponses.incrementAndGet();
 			}
 			
 			try {

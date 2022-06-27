@@ -11,7 +11,7 @@ public abstract class APIPerfCollector implements PerformanceDataCollector{
 	public boolean isLogging=true;
 	
 
-	public PerformanceMetricsData perfMetrices;
+	public PerformanceMetricsData perfMetrics;
 	
 	
 	public void printMessage(String message) {
