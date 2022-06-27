@@ -16,8 +16,10 @@ java -jar client-rest-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 
 HighLevelDesign-
 The UML Class diagram of the package is available in png file at top folder
-The coding statergy used is Prototyping model i.e. making a runnable code asap, tuning it and then making the design extensible
-At the core code uses Java ExectorService (with configurable number of concurrent clients) to collect the performance metrices
+The coding statergy used is Prototyping model i.e. making a runnable code asap, 
+tuning it and then making the design extensible
+At the core code uses Java ExectorService (with configurable number of concurrent clients) 
+to collect the performance metrices
 Git checkins are provided as the solution statergy evoloved
 First, getting the http client work
 then, looking for perf enchancements of the core logic
