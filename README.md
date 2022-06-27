@@ -15,7 +15,8 @@ Command-
 java -jar client-rest-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 
 HighLevelDesign-
-The UML Class diagram of the package is available in png file at top folder.
+The UML Class diagram of the package is available in png file at top folder. https://github.com/rakeshrikhi/RESTAPI/blob/main/RESTAPI.umlcd.png
+
 The coding statergy used is Prototyping model i.e. making a runnable code asap, 
 tuning it and then making the design extensible.
 At the core code uses Java ExectorService (with configurable number of concurrent clients) 
