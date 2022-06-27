@@ -3,7 +3,6 @@ package com.rikhi.experimentation;
 public abstract class APIPerfCollector implements PerformanceDataCollector{
 	
 	public String featureName;
-	public String[] tickers;
 	public String apiString;
 	public int MAX_NUM_CONCURRENT_CLIENTS = 4;
 	public int MAX_RUN_TIME_MINUTES = 1;

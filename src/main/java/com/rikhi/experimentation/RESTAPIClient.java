@@ -23,7 +23,10 @@ import java.util.concurrent.TimeUnit;
 
 public class RESTAPIClient {
 	public static void main(String[] args) {
-		KrakenTickerAPIPerfCollector tickerCollector=new KrakenTickerAPIPerfCollector();
+		//PerformanceDataCollector tickerCollector=new KrakenTickerAPIPerfCollector();
+		//tickerCollector.collect();
+		
+		PerformanceDataCollector tickerCollector=new KrakenAssetsAPIPerfCollector();
 		tickerCollector.collect();
 	}
 }
