@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_0dIhkPY9EeynmLUwrt2S0Q" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_0dML8PY9EeynmLUwrt2S0Q" source="codegen">
         <details xmi:id="_0dML8fY9EeynmLUwrt2S0Q" key="codegenDirectory" value="/RESTAPI/src/main/java"/>
-        <details xmi:id="_0oNwMPY9EeynmLUwrt2S0Q" key="AssociatedSourceCode" value="/RESTAPI/src/main/java/com/rikhi/experimentation/APIPerfCollector.java;3969012452/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenAPINoArgsPerfCollector.java;1298942413/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenAPIWithArgsPerfCollector.java;4104618833/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenAssetsAPIPerfCollector.java;2743352462/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenTickerAPIPerfCollector.java;693271688/1;/RESTAPI/src/main/java/com/rikhi/experimentation/PerformanceDataCollector.java;489827111/1;/RESTAPI/src/main/java/com/rikhi/experimentation/PerformanceMetricsData.java;4176037799/1;/RESTAPI/src/main/java/com/rikhi/experimentation/RESTAPIClient.java;1245195866/1;"/>
+        <details xmi:id="_0oNwMPY9EeynmLUwrt2S0Q" key="AssociatedSourceCode" value="/RESTAPI/src/main/java/com/rikhi/experimentation/APIPerfCollector.java;3314103842/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenAPINoArgsPerfCollector.java;697356507/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenAPIWithArgsPerfCollector.java;212624223/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenAssetsAPIPerfCollector.java;3532403501/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenTickerAPIPerfCollector.java;619531032/1;/RESTAPI/src/main/java/com/rikhi/experimentation/PerformanceDataCollector.java;489827111/1;/RESTAPI/src/main/java/com/rikhi/experimentation/PerformanceMetricsData.java;4176037799/1;/RESTAPI/src/main/java/com/rikhi/experimentation/RESTAPIClient.java;1245195866/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_0jV3QPY9EeynmLUwrt2S0Q">
@@ -60,7 +60,7 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               <defaultValue xmi:type="uml:LiteralString" xmi:id="_0laT0vY9EeynmLUwrt2S0Q" value="true"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_0la64fY9EeynmLUwrt2S0Q" name="perfMetrices" type="_0joyMvY9EeynmLUwrt2S0Q" association="_0l7RMPY9EeynmLUwrt2S0Q"/>
+            <ownedAttribute xmi:id="_MTZu8PZFEeynmLUwrt2S0Q" name="perfMetrics" type="_0joyMvY9EeynmLUwrt2S0Q" association="_MTeAYPZFEeynmLUwrt2S0Q"/>
             <interfaceRealization xmi:id="_0k9A0PY9EeynmLUwrt2S0Q" client="_0jUpIPY9EeynmLUwrt2S0Q" supplier="_0joyMPY9EeynmLUwrt2S0Q" contract="_0joyMPY9EeynmLUwrt2S0Q"/>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l1KkPY9EeynmLUwrt2S0Q" name="printMessage" specification="_0jYTgPY9EeynmLUwrt2S0Q">
               <ownedParameter xmi:id="_0l1KkfY9EeynmLUwrt2S0Q" name="message">
@@ -80,7 +80,7 @@
           <packagedElement xmi:type="uml:Class" xmi:id="_0jaIsPY9EeynmLUwrt2S0Q" name="KrakenAPINoArgsPerfCollector" isAbstract="true">
             <generalization xmi:id="_0lJ1IPY9EeynmLUwrt2S0Q" general="_0jUpIPY9EeynmLUwrt2S0Q"/>
             <ownedAttribute xmi:id="_0lbh8fY9EeynmLUwrt2S0Q" name="runTickerDataAPIConcurrently" type="_0lBSQPY9EeynmLUwrt2S0Q" association="_0l74QfY9EeynmLUwrt2S0Q">
-              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lcwEPY9EeynmLUwrt2S0Q" value="() -> {&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Max Time to run the loop&#xD;&#xA;&#x9;&#x9;long endRunTime = System.nanoTime() + TimeUnit.NANOSECONDS.convert(MAX_RUN_TIME_MINUTES, TimeUnit.MINUTES);&#xD;&#xA;&#x9;&#x9;//Total requests from a single client/thread&#xD;&#xA;&#x9;&#x9;int requestCount = 0;&#xD;&#xA;&#x9;&#x9;//Average of response time for a single client/thread&#xD;&#xA;&#x9;&#x9;double avgGetTickerData = 0L;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;//HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;//run for MAX_RUN_TIME_MINUTES minutes&#xD;&#xA;&#x9;&#x9;while (System.nanoTime() &lt; endRunTime) {&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//ToDo: Tried to avoid creating new client every time&#xD;&#xA;&#x9;&#x9;&#x9;//The current program was hanging after 2 requests from the same client&#xD;&#xA;&#x9;&#x9;&#x9;HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;&#x9;long start = System.currentTimeMillis();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//invoke the service&#xD;&#xA;&#x9;&#x9;&#x9;int response = processRequest(httpClient);&#xD;&#xA;&#x9;&#x9;&#x9;long end = System.currentTimeMillis();&#xD;&#xA;&#x9;&#x9;&#x9;long timeTaken = end - start;&#xD;&#xA;&#x9;&#x9;&#x9;perfMetrices.numberOfRequests.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;if(response==200) { //storing only successful request stats&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;++requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfSuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;avgGetTickerData = (avgGetTickerData * (requestCount - 1) + timeTaken) / requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(&quot;Total Request Counter:&quot;+perfMetrices.numberOfRequests.get()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+&quot;this Thread Request Counter:&quot;+requestCount &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot;--&quot; + response + &quot;--&quot; + (timeTaken) + &quot;ms&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; running average:&quot; + avgGetTickerData);&#xD;&#xA;&#x9;&#x9;&#x9;}else {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfUnsuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;try {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//do not overload the server, sleep for 1 sec after everyrequest&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Thread.sleep(WAIT_TIME_BETWEEN_REQUESTS_MS);&#xD;&#xA;&#x9;&#x9;&#x9;} catch (InterruptedException e) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;// TODO Auto-generated catch block&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(Thread.currentThread().getName()+&quot;:Exception-&quot;+e.getMessage());&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;return avgGetTickerData;&#xD;&#xA;&#x9;}"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lcwEPY9EeynmLUwrt2S0Q" value="() -> {&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Max Time to run the loop&#xD;&#xA;&#x9;&#x9;long endRunTime = System.nanoTime() + TimeUnit.NANOSECONDS.convert(MAX_RUN_TIME_MINUTES, TimeUnit.MINUTES);&#xD;&#xA;&#x9;&#x9;//Total requests from a single client/thread&#xD;&#xA;&#x9;&#x9;int requestCount = 0;&#xD;&#xA;&#x9;&#x9;//Average of response time for a single client/thread&#xD;&#xA;&#x9;&#x9;double avgGetTickerData = 0L;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;//HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;//run for MAX_RUN_TIME_MINUTES minutes&#xD;&#xA;&#x9;&#x9;while (System.nanoTime() &lt; endRunTime) {&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//ToDo: Tried to avoid creating new client every time&#xD;&#xA;&#x9;&#x9;&#x9;//The current program was hanging after 2 requests from the same client&#xD;&#xA;&#x9;&#x9;&#x9;HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;&#x9;long start = System.currentTimeMillis();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//invoke the service&#xD;&#xA;&#x9;&#x9;&#x9;int response = processRequest(httpClient);&#xD;&#xA;&#x9;&#x9;&#x9;long end = System.currentTimeMillis();&#xD;&#xA;&#x9;&#x9;&#x9;long timeTaken = end - start;&#xD;&#xA;&#x9;&#x9;&#x9;perfMetrics.numberOfRequests.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;if(response==200) { //storing only successful request stats&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;++requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrics.numberOfSuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;avgGetTickerData = (avgGetTickerData * (requestCount - 1) + timeTaken) / requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(&quot;Total Request Counter:&quot;+perfMetrics.numberOfRequests.get()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+&quot;this Thread Request Counter:&quot;+requestCount &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot;--&quot; + response + &quot;--&quot; + (timeTaken) + &quot;ms&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; running average:&quot; + avgGetTickerData);&#xD;&#xA;&#x9;&#x9;&#x9;}else {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrics.numberOfUnsuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;try {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//do not overload the server, sleep for 1 sec after everyrequest&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Thread.sleep(WAIT_TIME_BETWEEN_REQUESTS_MS);&#xD;&#xA;&#x9;&#x9;&#x9;} catch (InterruptedException e) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;// TODO Auto-generated catch block&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(Thread.currentThread().getName()+&quot;:Exception-&quot;+e.getMessage());&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;return avgGetTickerData;&#xD;&#xA;&#x9;}"/>
             </ownedAttribute>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l1xoPY9EeynmLUwrt2S0Q" name="collect" specification="_0jbW0PY9EeynmLUwrt2S0Q">
               <language>java</language>
@@ -112,9 +112,9 @@
 		}&#xD;
 		&#xD;
 		printMessage(&quot;runTickerDataAPIConcurrently Avg:&quot;+avgForAPI);&#xD;
-		perfMetrices.avgRequestExecTimePerClient=avgForAPI;&#xD;
-		perfMetrices.successfulResponsesPercent=&#xD;
-				(100*(perfMetrices.numberOfSuccessfulResponses.get()))/perfMetrices.numberOfRequests.get();&#xD;
+		perfMetrics.avgRequestExecTimePerClient=avgForAPI;&#xD;
+		perfMetrics.successfulResponsesPercent=&#xD;
+				(100*(perfMetrics.numberOfSuccessfulResponses.get()))/perfMetrics.numberOfRequests.get();&#xD;
 		&#xD;
 		try {&#xD;
 			executorService.awaitTermination(10, TimeUnit.SECONDS);//wait for 10 seconds&#xD;
@@ -124,13 +124,14 @@
 		}&#xD;
 		executorService.shutdownNow();&#xD;
 		&#xD;
-		printMessage(&quot;perfMetrices:&quot;+perfMetrices);&#xD;
+		printMessage(&quot;perfMetrics:&quot;+perfMetrics);&#xD;
 &#xD;
 	</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l1xofY9EeynmLUwrt2S0Q" name="processRequest" specification="_0lSYAPY9EeynmLUwrt2S0Q">
               <ownedParameter xmi:id="_0l1xovY9EeynmLUwrt2S0Q" name="httpClient" type="_0lGx0fY9EeynmLUwrt2S0Q"/>
               <ownedParameter xmi:id="_0l1xo_Y9EeynmLUwrt2S0Q" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
               </ownedParameter>
               <language>java</language>
@@ -144,6 +145,9 @@
 &#xD;
 			statusCode = response.getStatusLine().getStatusCode();&#xD;
 			printMessage(&quot;Received  Response&quot; + statusCode);&#xD;
+			&#xD;
+			//Listen to errors also&#xD;
+			//looks like status code is 200 but with an error array&#xD;
 &#xD;
 			if (statusCode != 200) {&#xD;
 				printMessage(&quot;Failed Response HTTP error code : &quot; + statusCode);&#xD;
@@ -174,7 +178,7 @@
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0ldXIvY9EeynmLUwrt2S0Q" value="*"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_0lelQPY9EeynmLUwrt2S0Q" name="runsymbolDataAPIConcurrently" type="_0lBSQPY9EeynmLUwrt2S0Q" association="_0l8fUfY9EeynmLUwrt2S0Q">
-              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lfMUfY9EeynmLUwrt2S0Q" value="() -> {&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Max Time to run the loop&#xD;&#xA;&#x9;&#x9;long endRunTime = System.nanoTime() + TimeUnit.NANOSECONDS.convert(MAX_RUN_TIME_MINUTES, TimeUnit.MINUTES);&#xD;&#xA;&#x9;&#x9;//Total requests from a single client/thread&#xD;&#xA;&#x9;&#x9;int requestCount = 0;&#xD;&#xA;&#x9;&#x9;//Average of response time for a single client/thread&#xD;&#xA;&#x9;&#x9;double avgGetsymbolData = 0L;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;//HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;//run for MAX_RUN_TIME_MINUTES minutes&#xD;&#xA;&#x9;&#x9;while (System.nanoTime() &lt; endRunTime) {&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//ToDo: Tried to avoid creating new client every time&#xD;&#xA;&#x9;&#x9;&#x9;//The current program was hanging after 2 requests from the same client&#xD;&#xA;&#x9;&#x9;&#x9;HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;&#x9;long start = System.currentTimeMillis();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//trying with 2 symbols, even-odd positions&#xD;&#xA;&#x9;&#x9;&#x9;//incrementing the total requests&#xD;&#xA;&#x9;&#x9;&#x9;String symbol = symbols[requestCount % symbols.length];&#xD;&#xA;&#x9;&#x9;&#x9;//invoke the service&#xD;&#xA;&#x9;&#x9;&#x9;int response = processRequest(httpClient, symbol);&#xD;&#xA;&#x9;&#x9;&#x9;long end = System.currentTimeMillis();&#xD;&#xA;&#x9;&#x9;&#x9;long timeTaken = end - start;&#xD;&#xA;&#x9;&#x9;&#x9;perfMetrices.numberOfRequests.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;if(response==200) { //storing only successful request stats&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;++requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfSuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;avgGetsymbolData = (avgGetsymbolData * (requestCount - 1) + timeTaken) / requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(&quot;Total Request Counter:&quot;+perfMetrices.numberOfRequests.get()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+&quot;this Thread Request Counter:&quot;+requestCount &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot;--&quot; + symbol + &quot;--&quot; + response + &quot;--&quot; + (timeTaken) + &quot;ms&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; running average:&quot; + avgGetsymbolData);&#xD;&#xA;&#x9;&#x9;&#x9;}else {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfUnsuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;try {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//do not overload the server, sleep for 1 sec after every request&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Thread.sleep(WAIT_TIME_BETWEEN_REQUESTS_MS);&#xD;&#xA;&#x9;&#x9;&#x9;} catch (InterruptedException e) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;// TODO Auto-generated catch block&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(Thread.currentThread().getName()+&quot;:Exception-&quot;+e.getMessage());&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;return avgGetsymbolData;&#xD;&#xA;&#x9;}"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lfMUfY9EeynmLUwrt2S0Q" value="() -> {&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Max Time to run the loop&#xD;&#xA;&#x9;&#x9;long endRunTime = System.nanoTime() + TimeUnit.NANOSECONDS.convert(MAX_RUN_TIME_MINUTES, TimeUnit.MINUTES);&#xD;&#xA;&#x9;&#x9;//Total requests from a single client/thread&#xD;&#xA;&#x9;&#x9;int requestCount = 0;&#xD;&#xA;&#x9;&#x9;//Average of response time for a single client/thread&#xD;&#xA;&#x9;&#x9;double avgGetsymbolData = 0L;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;//HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;//run for MAX_RUN_TIME_MINUTES minutes&#xD;&#xA;&#x9;&#x9;while (System.nanoTime() &lt; endRunTime) {&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//ToDo: Tried to avoid creating new client every time&#xD;&#xA;&#x9;&#x9;&#x9;//The current program was hanging after 2 requests from the same client&#xD;&#xA;&#x9;&#x9;&#x9;HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;&#x9;long start = System.currentTimeMillis();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//trying with 2 symbols, even-odd positions&#xD;&#xA;&#x9;&#x9;&#x9;//incrementing the total requests&#xD;&#xA;&#x9;&#x9;&#x9;String symbol = symbols[requestCount % symbols.length];&#xD;&#xA;&#x9;&#x9;&#x9;//invoke the service&#xD;&#xA;&#x9;&#x9;&#x9;int response = processRequest(httpClient, symbol);&#xD;&#xA;&#x9;&#x9;&#x9;long end = System.currentTimeMillis();&#xD;&#xA;&#x9;&#x9;&#x9;long timeTaken = end - start;&#xD;&#xA;&#x9;&#x9;&#x9;perfMetrics.numberOfRequests.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;if(response==200) { //storing only successful request stats&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;++requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrics.numberOfSuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;avgGetsymbolData = (avgGetsymbolData * (requestCount - 1) + timeTaken) / requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(&quot;Total Request Counter:&quot;+perfMetrics.numberOfRequests.get()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+&quot;this Thread Request Counter:&quot;+requestCount &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot;--&quot; + symbol + &quot;--&quot; + response + &quot;--&quot; + (timeTaken) + &quot;ms&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; running average:&quot; + avgGetsymbolData);&#xD;&#xA;&#x9;&#x9;&#x9;}else {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrics.numberOfUnsuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;try {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//do not overload the server, sleep for 1 sec after every request&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Thread.sleep(WAIT_TIME_BETWEEN_REQUESTS_MS);&#xD;&#xA;&#x9;&#x9;&#x9;} catch (InterruptedException e) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;// TODO Auto-generated catch block&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(Thread.currentThread().getName()+&quot;:Exception-&quot;+e.getMessage());&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;return avgGetsymbolData;&#xD;&#xA;&#x9;}"/>
             </ownedAttribute>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l1xpPY9EeynmLUwrt2S0Q" name="collect" specification="_0jfoQPY9EeynmLUwrt2S0Q">
               <language>java</language>
@@ -206,9 +210,9 @@
 		}&#xD;
 		&#xD;
 		printMessage(&quot;runsymbolDataAPIConcurrently Avg:&quot;+avgForAPI);&#xD;
-		perfMetrices.avgRequestExecTimePerClient=avgForAPI;&#xD;
-		perfMetrices.successfulResponsesPercent=&#xD;
-				(100*(perfMetrices.numberOfSuccessfulResponses.get()))/perfMetrices.numberOfRequests.get();&#xD;
+		perfMetrics.avgRequestExecTimePerClient=avgForAPI;&#xD;
+		perfMetrics.successfulResponsesPercent=&#xD;
+				(100*(perfMetrics.numberOfSuccessfulResponses.get()))/perfMetrics.numberOfRequests.get();&#xD;
 		&#xD;
 		try {&#xD;
 			executorService.awaitTermination(10, TimeUnit.SECONDS);//wait for 10 seconds&#xD;
@@ -218,7 +222,7 @@
 		}&#xD;
 		executorService.shutdownNow();&#xD;
 		&#xD;
-		printMessage(&quot;perfMetrices:&quot;+perfMetrices);&#xD;
+		printMessage(&quot;perfMetrics:&quot;+perfMetrics);&#xD;
 &#xD;
 	</body>
             </ownedBehavior>
@@ -228,6 +232,7 @@
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
               </ownedParameter>
               <ownedParameter xmi:id="_0l2Ys_Y9EeynmLUwrt2S0Q" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
               </ownedParameter>
               <language>java</language>
@@ -241,6 +246,9 @@
 &#xD;
 			statusCode = response.getStatusLine().getStatusCode();&#xD;
 			printMessage(&quot;Received symbol Response for:&quot; + symbol + &quot; as:&quot; + statusCode);&#xD;
+			&#xD;
+			//Listen to errors also&#xD;
+			//looks like status code is 200 but with an error array&#xD;
 &#xD;
 			if (statusCode != 200) {&#xD;
 				printMessage(&quot;Failed : symbol:&quot;+symbol+&quot; Response HTTP error code : &quot; + statusCode);&#xD;
@@ -270,12 +278,14 @@
           <packagedElement xmi:type="uml:Class" xmi:id="_0jjSoPY9EeynmLUwrt2S0Q" name="KrakenAssetsAPIPerfCollector">
             <generalization xmi:id="_0lM4cPY9EeynmLUwrt2S0Q" general="_0jaIsPY9EeynmLUwrt2S0Q"/>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l2YtPY9EeynmLUwrt2S0Q" name="KrakenAssetsAPIPerfCollector" specification="_0jj5sPY9EeynmLUwrt2S0Q">
-              <ownedParameter xmi:id="_0l2YtfY9EeynmLUwrt2S0Q" type="_0jjSoPY9EeynmLUwrt2S0Q" direction="return"/>
+              <ownedParameter xmi:id="_0l2YtfY9EeynmLUwrt2S0Q" type="_0jjSoPY9EeynmLUwrt2S0Q" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>super();&#xD;
-		perfMetrices=new PerformanceMetricsData();&#xD;
-		perfMetrices.metricsKeyName=&quot;KrakenSsetsAPI&quot;;&#xD;
-		perfMetrices.numberOfConcurrentClients=MAX_NUM_CONCURRENT_CLIENTS;&#xD;
+		perfMetrics=new PerformanceMetricsData();&#xD;
+		perfMetrics.metricsKeyName=&quot;KrakenSsetsAPI&quot;;&#xD;
+		perfMetrics.numberOfConcurrentClients=MAX_NUM_CONCURRENT_CLIENTS;&#xD;
 		apiString=&quot;https://api.kraken.com/0/public/Assets&quot;;&#xD;
 	</body>
             </ownedBehavior>
@@ -295,12 +305,14 @@
           <packagedElement xmi:type="uml:Class" xmi:id="_0jlu4PY9EeynmLUwrt2S0Q" name="KrakenTickerAPIPerfCollector">
             <generalization xmi:id="_0lM4cfY9EeynmLUwrt2S0Q" general="_0jeaIPY9EeynmLUwrt2S0Q"/>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l2_wfY9EeynmLUwrt2S0Q" name="KrakenTickerAPIPerfCollector" specification="_0jmV8PY9EeynmLUwrt2S0Q">
-              <ownedParameter xmi:id="_0l2_wvY9EeynmLUwrt2S0Q" type="_0jlu4PY9EeynmLUwrt2S0Q" direction="return"/>
+              <ownedParameter xmi:id="_0l2_wvY9EeynmLUwrt2S0Q" type="_0jlu4PY9EeynmLUwrt2S0Q" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>super();&#xD;
-		perfMetrices=new PerformanceMetricsData();&#xD;
-		perfMetrices.metricsKeyName=&quot;KrakenTickerAPI&quot;;&#xD;
-		perfMetrices.numberOfConcurrentClients=MAX_NUM_CONCURRENT_CLIENTS;&#xD;
+		perfMetrics=new PerformanceMetricsData();&#xD;
+		perfMetrics.metricsKeyName=&quot;KrakenTickerAPI&quot;;&#xD;
+		perfMetrics.numberOfConcurrentClients=MAX_NUM_CONCURRENT_CLIENTS;&#xD;
 		symbols = new String[]{&quot;XBTUSD&quot;, &quot;XBTGBP&quot;};&#xD;
 		apiString=&quot;https://api.kraken.com/0/public/Ticker?pair=&quot;;&#xD;
 	</body>
@@ -408,9 +420,6 @@
               </ownedParameter>
             </ownedOperation>
           </packagedElement>
-          <packagedElement xmi:type="uml:Association" xmi:id="_0l7RMPY9EeynmLUwrt2S0Q" name="" memberEnd="_0l7RMfY9EeynmLUwrt2S0Q _0la64fY9EeynmLUwrt2S0Q">
-            <ownedEnd xmi:id="_0l7RMfY9EeynmLUwrt2S0Q" name="" type="_0jUpIPY9EeynmLUwrt2S0Q" association="_0l7RMPY9EeynmLUwrt2S0Q"/>
-          </packagedElement>
           <packagedElement xmi:type="uml:Association" xmi:id="_0l74QfY9EeynmLUwrt2S0Q" name="" memberEnd="_0l74QvY9EeynmLUwrt2S0Q _0lbh8fY9EeynmLUwrt2S0Q">
             <ownedEnd xmi:id="_0l74QvY9EeynmLUwrt2S0Q" name="" type="_0jaIsPY9EeynmLUwrt2S0Q" association="_0l74QfY9EeynmLUwrt2S0Q"/>
           </packagedElement>
@@ -425,6 +434,9 @@
           </packagedElement>
           <packagedElement xmi:type="uml:Association" xmi:id="_0l-7kfY9EeynmLUwrt2S0Q" name="" memberEnd="_0l-7kvY9EeynmLUwrt2S0Q _0lxgMfY9EeynmLUwrt2S0Q">
             <ownedEnd xmi:id="_0l-7kvY9EeynmLUwrt2S0Q" name="" type="_0joyMvY9EeynmLUwrt2S0Q" association="_0l-7kfY9EeynmLUwrt2S0Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_MTeAYPZFEeynmLUwrt2S0Q" name="" memberEnd="_MTeAYfZFEeynmLUwrt2S0Q _MTZu8PZFEeynmLUwrt2S0Q">
+            <ownedEnd xmi:id="_MTeAYfZFEeynmLUwrt2S0Q" name="" type="_0jUpIPY9EeynmLUwrt2S0Q" association="_MTeAYPZFEeynmLUwrt2S0Q"/>
           </packagedElement>
         </packagedElement>
       </packagedElement>
@@ -515,7 +527,6 @@
   <UMLLabProfile:LegacyStyledElement xmi:id="_0lZFsfY9EeynmLUwrt2S0Q" base_Element="_0lYeo_Y9EeynmLUwrt2S0Q"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_0laT0PY9EeynmLUwrt2S0Q" base_Element="_0lZswPY9EeynmLUwrt2S0Q"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_0la64PY9EeynmLUwrt2S0Q" base_Element="_0laT0fY9EeynmLUwrt2S0Q"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_0lbh8PY9EeynmLUwrt2S0Q" base_Element="_0la64fY9EeynmLUwrt2S0Q"/>
   <UMLLabProfile:Generics xmi:id="_0lcJAPY9EeynmLUwrt2S0Q" genericsValue="Double" base_Element="_0lbh8fY9EeynmLUwrt2S0Q"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_0ldXIPY9EeynmLUwrt2S0Q" base_Element="_0lbh8fY9EeynmLUwrt2S0Q"/>
   <UMLLabProfile:Array xmi:id="_0ld-MPY9EeynmLUwrt2S0Q" base_Element="_0ldXIfY9EeynmLUwrt2S0Q"/>
@@ -531,10 +542,11 @@
   <UMLLabProfile:LegacyStyledElement xmi:id="_0lzVYPY9EeynmLUwrt2S0Q" base_Element="_0lyuUfY9EeynmLUwrt2S0Q"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_0lz8cPY9EeynmLUwrt2S0Q" base_Element="_0lzVYfY9EeynmLUwrt2S0Q"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_0lz8c_Y9EeynmLUwrt2S0Q" base_Element="_0lz8cfY9EeynmLUwrt2S0Q"/>
-  <UMLLabProfile:Reference xmi:id="_0l74QPY9EeynmLUwrt2S0Q" base_Element="_0l7RMPY9EeynmLUwrt2S0Q"/>
   <UMLLabProfile:Reference xmi:id="_0l8fUPY9EeynmLUwrt2S0Q" base_Element="_0l74QfY9EeynmLUwrt2S0Q"/>
   <UMLLabProfile:Reference xmi:id="_0l9GYPY9EeynmLUwrt2S0Q" base_Element="_0l8fUfY9EeynmLUwrt2S0Q"/>
   <UMLLabProfile:Reference xmi:id="_0l-UgPY9EeynmLUwrt2S0Q" base_Element="_0l9tcPY9EeynmLUwrt2S0Q"/>
   <UMLLabProfile:Reference xmi:id="_0l-7kPY9EeynmLUwrt2S0Q" base_Element="_0l-UgfY9EeynmLUwrt2S0Q"/>
   <UMLLabProfile:Reference xmi:id="_0l_ioPY9EeynmLUwrt2S0Q" base_Element="_0l-7kfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_MTaWAPZFEeynmLUwrt2S0Q" base_Element="_MTZu8PZFEeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_MTencPZFEeynmLUwrt2S0Q" base_Element="_MTeAYPZFEeynmLUwrt2S0Q"/>
 </xmi:XMI>

@@ -4,27 +4,6 @@
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_0ocZsPY9EeynmLUwrt2S0Q" sourceAnchor="195.0,0.0" targetAnchor="101.0,85.0" dashed="true" superClass="_0oZWYPY9EeynmLUwrt2S0Q" subClass="_0ogrKfY9EeynmLUwrt2S0Q">
     <modelElement href="RESTAPI.uml#_0k9A0PY9EeynmLUwrt2S0Q"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_0ogrIPY9EeynmLUwrt2S0Q" sourceAnchor="391.0,96.0" targetAnchor="0.0,138.0" target="_0o2pafY9EeynmLUwrt2S0Q" source="_0ogrKfY9EeynmLUwrt2S0Q">
-    <modelElement href="RESTAPI.uml#_0l7RMPY9EeynmLUwrt2S0Q"/>
-    <stereotypes xmi:id="_0ogrIfY9EeynmLUwrt2S0Q" name="Reference">
-      <modelElement href="RESTAPI.uml#_0l74QPY9EeynmLUwrt2S0Q"/>
-    </stereotypes>
-    <nameVisual xmi:id="_0ogrIvY9EeynmLUwrt2S0Q" text="">
-      <visualProperties xmi:id="_1BRwcPY9EeynmLUwrt2S0Q" position="-3.0,2.0"/>
-    </nameVisual>
-    <sourceRole xmi:id="_0ogrI_Y9EeynmLUwrt2S0Q" aggregationKind="NONE" name="">
-      <modelElement href="RESTAPI.uml#_0l7RMfY9EeynmLUwrt2S0Q"/>
-      <visualProperties xmi:id="_1BRJZfY9EeynmLUwrt2S0Q" position="19.0,-57.0"/>
-      <visibility xmi:id="_0ogrJPY9EeynmLUwrt2S0Q" label="+"/>
-      <cardinality xmi:id="_0ogrJfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
-    </sourceRole>
-    <targetRole xmi:id="_0ogrJvY9EeynmLUwrt2S0Q" aggregationKind="NONE" name="perfMetrices" navigable="true">
-      <modelElement href="RESTAPI.uml#_0la64fY9EeynmLUwrt2S0Q"/>
-      <visualProperties xmi:id="_1BSXgPY9EeynmLUwrt2S0Q" position="-180.0,2.0"/>
-      <visibility xmi:id="_0ogrJ_Y9EeynmLUwrt2S0Q" label="+"/>
-      <cardinality xmi:id="_0ogrKPY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
-    </targetRole>
-  </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_0onY0PY9EeynmLUwrt2S0Q" sourceAnchor="248.0,0.0" targetAnchor="195.0,208.0" superClass="_0ogrKfY9EeynmLUwrt2S0Q" subClass="_0oqcIPY9EeynmLUwrt2S0Q">
     <modelElement href="RESTAPI.uml#_0lJ1IPY9EeynmLUwrt2S0Q"/>
     <bendpoints xmi:id="_9Not4fY9EeynmLUwrt2S0Q" sourceY="-50" targetX="515" targetY="37"/>
@@ -127,6 +106,24 @@
     <modelElement href="RESTAPI.uml#_0lM4cfY9EeynmLUwrt2S0Q"/>
   </edges>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__JPFoPZCEeynmLUwrt2S0Q" targetItem="_0ovUoPY9EeynmLUwrt2S0Q" sourceItem="__I_OAPZCEeynmLUwrt2S0Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_MYJFAPZFEeynmLUwrt2S0Q" target="_0o2pafY9EeynmLUwrt2S0Q" source="_0ogrKfY9EeynmLUwrt2S0Q">
+    <modelElement href="RESTAPI.uml#_MTeAYPZFEeynmLUwrt2S0Q"/>
+    <stereotypes xmi:id="_MYJFAfZFEeynmLUwrt2S0Q" name="Reference">
+      <modelElement href="RESTAPI.uml#_MTencPZFEeynmLUwrt2S0Q"/>
+    </stereotypes>
+    <nameVisual xmi:id="_MYJFAvZFEeynmLUwrt2S0Q" text=""/>
+    <sourceRole xmi:id="_MYJFA_ZFEeynmLUwrt2S0Q" aggregationKind="NONE" name="">
+      <modelElement href="RESTAPI.uml#_MTeAYfZFEeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_MYJFBPZFEeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_MYJFBfZFEeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_MYJFBvZFEeynmLUwrt2S0Q" aggregationKind="NONE" name="perfMetrics" navigable="true">
+      <modelElement href="RESTAPI.uml#_MTZu8PZFEeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_MbrhMPZFEeynmLUwrt2S0Q" name="LegacyStyledElement"/>
+      <visibility xmi:id="_MYJFB_ZFEeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_MYJFCPZFEeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_0oZWYPY9EeynmLUwrt2S0Q" name="PerformanceDataCollector" subclassedBy="_0ocZsPY9EeynmLUwrt2S0Q">
     <modelElement href="RESTAPI.uml#_0joyMPY9EeynmLUwrt2S0Q"/>
     <visualProperties xmi:id="_0oZWYfY9EeynmLUwrt2S0Q" position="35.0,46.0" size="-1.0,-1.0"/>
@@ -137,7 +134,7 @@
       <cardinality xmi:id="_0oZWZfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_0ogrKfY9EeynmLUwrt2S0Q" name="APIPerfCollector" abstractClass="true" associationsOut="_0ogrIPY9EeynmLUwrt2S0Q" generalizations="_0ocZsPY9EeynmLUwrt2S0Q" subclassedBy="_0onY0PY9EeynmLUwrt2S0Q _0pCPkPY9EeynmLUwrt2S0Q">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_0ogrKfY9EeynmLUwrt2S0Q" name="APIPerfCollector" abstractClass="true" associationsOut="_MYJFAPZFEeynmLUwrt2S0Q" generalizations="_0ocZsPY9EeynmLUwrt2S0Q" subclassedBy="_0onY0PY9EeynmLUwrt2S0Q _0pCPkPY9EeynmLUwrt2S0Q">
     <modelElement href="RESTAPI.uml#_0jUpIPY9EeynmLUwrt2S0Q"/>
     <visualProperties xmi:id="_0ogrKvY9EeynmLUwrt2S0Q" position="-59.0,186.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_0ogrK_Y9EeynmLUwrt2S0Q" label="+"/>
@@ -207,14 +204,14 @@
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
       </type>
     </attributes>
-    <attributes xmi:id="_0ogrSvY9EeynmLUwrt2S0Q" name="perfMetrices">
-      <modelElement href="RESTAPI.uml#_0la64fY9EeynmLUwrt2S0Q"/>
-      <stereotypes xmi:id="_0ogrS_Y9EeynmLUwrt2S0Q" name="LegacyStyledElement">
-        <modelElement href="RESTAPI.uml#_0lbh8PY9EeynmLUwrt2S0Q"/>
+    <attributes xmi:id="_MYJsEPZFEeynmLUwrt2S0Q" name="perfMetrics">
+      <modelElement href="RESTAPI.uml#_MTZu8PZFEeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_MYJsEfZFEeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="RESTAPI.uml#_MTaWAPZFEeynmLUwrt2S0Q"/>
       </stereotypes>
-      <visibility xmi:id="_0ogrTPY9EeynmLUwrt2S0Q" label="+"/>
-      <cardinality xmi:id="_0ogrTfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
-      <type xmi:id="_0ogrTvY9EeynmLUwrt2S0Q" name="PerformanceMetricsData">
+      <visibility xmi:id="_MYJsEvZFEeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_MYJsE_ZFEeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_MYJsFPZFEeynmLUwrt2S0Q" name="PerformanceMetricsData">
         <modelElement href="RESTAPI.uml#_0joyMvY9EeynmLUwrt2S0Q"/>
       </type>
     </attributes>
@@ -231,7 +228,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_0o2pafY9EeynmLUwrt2S0Q" name="PerformanceMetricsData" associationsIn="_0ogrIPY9EeynmLUwrt2S0Q" associationsOut="_0o00MPY9EeynmLUwrt2S0Q _0o1bQPY9EeynmLUwrt2S0Q _0o2pYPY9EeynmLUwrt2S0Q">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_0o2pafY9EeynmLUwrt2S0Q" name="PerformanceMetricsData" associationsIn="_MYJFAPZFEeynmLUwrt2S0Q" associationsOut="_0o00MPY9EeynmLUwrt2S0Q _0o1bQPY9EeynmLUwrt2S0Q _0o2pYPY9EeynmLUwrt2S0Q">
     <modelElement href="RESTAPI.uml#_0joyMvY9EeynmLUwrt2S0Q"/>
     <visualProperties xmi:id="_0o2pavY9EeynmLUwrt2S0Q" position="908.0,144.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_0o2pa_Y9EeynmLUwrt2S0Q" label="+"/>
@@ -364,7 +361,7 @@
         <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </type>
     </attributes>
-    <attributes xmi:id="_0pGhCfY9EeynmLUwrt2S0Q" defaultValue="() -> {&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Max Time to run the loop&#xD;&#xA;&#x9;&#x9;long endRunTime = System.nanoTime() + TimeUnit.NANOSECONDS.convert(MAX_RUN_TIME_MINUTES, TimeUnit.MINUTES);&#xD;&#xA;&#x9;&#x9;//Total requests from a single client/thread&#xD;&#xA;&#x9;&#x9;int requestCount = 0;&#xD;&#xA;&#x9;&#x9;//Average of response time for a single client/thread&#xD;&#xA;&#x9;&#x9;double avgGetsymbolData = 0L;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;//HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;//run for MAX_RUN_TIME_MINUTES minutes&#xD;&#xA;&#x9;&#x9;while (System.nanoTime() &lt; endRunTime) {&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//ToDo: Tried to avoid creating new client every time&#xD;&#xA;&#x9;&#x9;&#x9;//The current program was hanging after 2 requests from the same client&#xD;&#xA;&#x9;&#x9;&#x9;HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;&#x9;long start = System.currentTimeMillis();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//trying with 2 symbols, even-odd positions&#xD;&#xA;&#x9;&#x9;&#x9;//incrementing the total requests&#xD;&#xA;&#x9;&#x9;&#x9;String symbol = symbols[requestCount % symbols.length];&#xD;&#xA;&#x9;&#x9;&#x9;//invoke the service&#xD;&#xA;&#x9;&#x9;&#x9;int response = processRequest(httpClient, symbol);&#xD;&#xA;&#x9;&#x9;&#x9;long end = System.currentTimeMillis();&#xD;&#xA;&#x9;&#x9;&#x9;long timeTaken = end - start;&#xD;&#xA;&#x9;&#x9;&#x9;perfMetrices.numberOfRequests.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;if(response==200) { //storing only successful request stats&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;++requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfSuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;avgGetsymbolData = (avgGetsymbolData * (requestCount - 1) + timeTaken) / requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(&quot;Total Request Counter:&quot;+perfMetrices.numberOfRequests.get()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+&quot;this Thread Request Counter:&quot;+requestCount &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot;--&quot; + symbol + &quot;--&quot; + response + &quot;--&quot; + (timeTaken) + &quot;ms&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; running average:&quot; + avgGetsymbolData);&#xD;&#xA;&#x9;&#x9;&#x9;}else {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfUnsuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;try {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//do not overload the server, sleep for 1 sec after every request&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Thread.sleep(WAIT_TIME_BETWEEN_REQUESTS_MS);&#xD;&#xA;&#x9;&#x9;&#x9;} catch (InterruptedException e) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;// TODO Auto-generated catch block&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(Thread.currentThread().getName()+&quot;:Exception-&quot;+e.getMessage());&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;return avgGetsymbolData;&#xD;&#xA;&#x9;}" name="runsymbolDataAPIConcurrently">
+    <attributes xmi:id="_0pGhCfY9EeynmLUwrt2S0Q" defaultValue="() -> {&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Max Time to run the loop&#xD;&#xA;&#x9;&#x9;long endRunTime = System.nanoTime() + TimeUnit.NANOSECONDS.convert(MAX_RUN_TIME_MINUTES, TimeUnit.MINUTES);&#xD;&#xA;&#x9;&#x9;//Total requests from a single client/thread&#xD;&#xA;&#x9;&#x9;int requestCount = 0;&#xD;&#xA;&#x9;&#x9;//Average of response time for a single client/thread&#xD;&#xA;&#x9;&#x9;double avgGetsymbolData = 0L;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;//HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;//run for MAX_RUN_TIME_MINUTES minutes&#xD;&#xA;&#x9;&#x9;while (System.nanoTime() &lt; endRunTime) {&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//ToDo: Tried to avoid creating new client every time&#xD;&#xA;&#x9;&#x9;&#x9;//The current program was hanging after 2 requests from the same client&#xD;&#xA;&#x9;&#x9;&#x9;HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;&#x9;long start = System.currentTimeMillis();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//trying with 2 symbols, even-odd positions&#xD;&#xA;&#x9;&#x9;&#x9;//incrementing the total requests&#xD;&#xA;&#x9;&#x9;&#x9;String symbol = symbols[requestCount % symbols.length];&#xD;&#xA;&#x9;&#x9;&#x9;//invoke the service&#xD;&#xA;&#x9;&#x9;&#x9;int response = processRequest(httpClient, symbol);&#xD;&#xA;&#x9;&#x9;&#x9;long end = System.currentTimeMillis();&#xD;&#xA;&#x9;&#x9;&#x9;long timeTaken = end - start;&#xD;&#xA;&#x9;&#x9;&#x9;perfMetrics.numberOfRequests.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;if(response==200) { //storing only successful request stats&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;++requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrics.numberOfSuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;avgGetsymbolData = (avgGetsymbolData * (requestCount - 1) + timeTaken) / requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(&quot;Total Request Counter:&quot;+perfMetrics.numberOfRequests.get()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+&quot;this Thread Request Counter:&quot;+requestCount &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot;--&quot; + symbol + &quot;--&quot; + response + &quot;--&quot; + (timeTaken) + &quot;ms&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; running average:&quot; + avgGetsymbolData);&#xD;&#xA;&#x9;&#x9;&#x9;}else {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrics.numberOfUnsuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;try {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//do not overload the server, sleep for 1 sec after every request&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Thread.sleep(WAIT_TIME_BETWEEN_REQUESTS_MS);&#xD;&#xA;&#x9;&#x9;&#x9;} catch (InterruptedException e) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;// TODO Auto-generated catch block&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(Thread.currentThread().getName()+&quot;:Exception-&quot;+e.getMessage());&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;return avgGetsymbolData;&#xD;&#xA;&#x9;}" name="runsymbolDataAPIConcurrently">
       <modelElement href="RESTAPI.uml#_0lelQPY9EeynmLUwrt2S0Q"/>
       <stereotypes xmi:id="_0pGhCvY9EeynmLUwrt2S0Q" name="Generics">
         <modelElement href="RESTAPI.uml#_0lfMUPY9EeynmLUwrt2S0Q"/>
@@ -447,7 +444,7 @@
     <modelElement href="RESTAPI.uml#_0jaIsPY9EeynmLUwrt2S0Q"/>
     <visualProperties xmi:id="_0oqcIfY9EeynmLUwrt2S0Q" position="403.0,481.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_0oqcIvY9EeynmLUwrt2S0Q" label="+"/>
-    <attributes xmi:id="_0oqcI_Y9EeynmLUwrt2S0Q" defaultValue="() -> {&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Max Time to run the loop&#xD;&#xA;&#x9;&#x9;long endRunTime = System.nanoTime() + TimeUnit.NANOSECONDS.convert(MAX_RUN_TIME_MINUTES, TimeUnit.MINUTES);&#xD;&#xA;&#x9;&#x9;//Total requests from a single client/thread&#xD;&#xA;&#x9;&#x9;int requestCount = 0;&#xD;&#xA;&#x9;&#x9;//Average of response time for a single client/thread&#xD;&#xA;&#x9;&#x9;double avgGetTickerData = 0L;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;//HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;//run for MAX_RUN_TIME_MINUTES minutes&#xD;&#xA;&#x9;&#x9;while (System.nanoTime() &lt; endRunTime) {&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//ToDo: Tried to avoid creating new client every time&#xD;&#xA;&#x9;&#x9;&#x9;//The current program was hanging after 2 requests from the same client&#xD;&#xA;&#x9;&#x9;&#x9;HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;&#x9;long start = System.currentTimeMillis();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//invoke the service&#xD;&#xA;&#x9;&#x9;&#x9;int response = processRequest(httpClient);&#xD;&#xA;&#x9;&#x9;&#x9;long end = System.currentTimeMillis();&#xD;&#xA;&#x9;&#x9;&#x9;long timeTaken = end - start;&#xD;&#xA;&#x9;&#x9;&#x9;perfMetrices.numberOfRequests.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;if(response==200) { //storing only successful request stats&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;++requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfSuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;avgGetTickerData = (avgGetTickerData * (requestCount - 1) + timeTaken) / requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(&quot;Total Request Counter:&quot;+perfMetrices.numberOfRequests.get()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+&quot;this Thread Request Counter:&quot;+requestCount &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot;--&quot; + response + &quot;--&quot; + (timeTaken) + &quot;ms&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; running average:&quot; + avgGetTickerData);&#xD;&#xA;&#x9;&#x9;&#x9;}else {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfUnsuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;try {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//do not overload the server, sleep for 1 sec after everyrequest&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Thread.sleep(WAIT_TIME_BETWEEN_REQUESTS_MS);&#xD;&#xA;&#x9;&#x9;&#x9;} catch (InterruptedException e) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;// TODO Auto-generated catch block&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(Thread.currentThread().getName()+&quot;:Exception-&quot;+e.getMessage());&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;return avgGetTickerData;&#xD;&#xA;&#x9;}" name="runTickerDataAPIConcurrently">
+    <attributes xmi:id="_0oqcI_Y9EeynmLUwrt2S0Q" defaultValue="() -> {&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Max Time to run the loop&#xD;&#xA;&#x9;&#x9;long endRunTime = System.nanoTime() + TimeUnit.NANOSECONDS.convert(MAX_RUN_TIME_MINUTES, TimeUnit.MINUTES);&#xD;&#xA;&#x9;&#x9;//Total requests from a single client/thread&#xD;&#xA;&#x9;&#x9;int requestCount = 0;&#xD;&#xA;&#x9;&#x9;//Average of response time for a single client/thread&#xD;&#xA;&#x9;&#x9;double avgGetTickerData = 0L;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;//HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;//run for MAX_RUN_TIME_MINUTES minutes&#xD;&#xA;&#x9;&#x9;while (System.nanoTime() &lt; endRunTime) {&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//ToDo: Tried to avoid creating new client every time&#xD;&#xA;&#x9;&#x9;&#x9;//The current program was hanging after 2 requests from the same client&#xD;&#xA;&#x9;&#x9;&#x9;HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;&#x9;long start = System.currentTimeMillis();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//invoke the service&#xD;&#xA;&#x9;&#x9;&#x9;int response = processRequest(httpClient);&#xD;&#xA;&#x9;&#x9;&#x9;long end = System.currentTimeMillis();&#xD;&#xA;&#x9;&#x9;&#x9;long timeTaken = end - start;&#xD;&#xA;&#x9;&#x9;&#x9;perfMetrics.numberOfRequests.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;if(response==200) { //storing only successful request stats&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;++requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrics.numberOfSuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;avgGetTickerData = (avgGetTickerData * (requestCount - 1) + timeTaken) / requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(&quot;Total Request Counter:&quot;+perfMetrics.numberOfRequests.get()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+&quot;this Thread Request Counter:&quot;+requestCount &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot;--&quot; + response + &quot;--&quot; + (timeTaken) + &quot;ms&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; running average:&quot; + avgGetTickerData);&#xD;&#xA;&#x9;&#x9;&#x9;}else {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrics.numberOfUnsuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;try {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//do not overload the server, sleep for 1 sec after everyrequest&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Thread.sleep(WAIT_TIME_BETWEEN_REQUESTS_MS);&#xD;&#xA;&#x9;&#x9;&#x9;} catch (InterruptedException e) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;// TODO Auto-generated catch block&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(Thread.currentThread().getName()+&quot;:Exception-&quot;+e.getMessage());&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;return avgGetTickerData;&#xD;&#xA;&#x9;}" name="runTickerDataAPIConcurrently">
       <modelElement href="RESTAPI.uml#_0lbh8fY9EeynmLUwrt2S0Q"/>
       <stereotypes xmi:id="_0oqcJPY9EeynmLUwrt2S0Q" name="Generics">
         <modelElement href="RESTAPI.uml#_0lcJAPY9EeynmLUwrt2S0Q"/>
