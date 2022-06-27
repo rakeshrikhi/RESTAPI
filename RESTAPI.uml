@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_0V87gPY9EeynmLUwrt2S0Q" name="RESTAPI">
+    <eAnnotations xmi:id="_0dIhkPY9EeynmLUwrt2S0Q" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_0dML8PY9EeynmLUwrt2S0Q" source="codegen">
+        <details xmi:id="_0dML8fY9EeynmLUwrt2S0Q" key="codegenDirectory" value="/RESTAPI/src/main/java"/>
+        <details xmi:id="_0oNwMPY9EeynmLUwrt2S0Q" key="AssociatedSourceCode" value="/RESTAPI/src/main/java/com/rikhi/experimentation/APIPerfCollector.java;3969012452/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenAPINoArgsPerfCollector.java;1298942413/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenAPIWithArgsPerfCollector.java;4104618833/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenAssetsAPIPerfCollector.java;2743352462/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenTickerAPIPerfCollector.java;693271688/1;/RESTAPI/src/main/java/com/rikhi/experimentation/PerformanceDataCollector.java;489827111/1;/RESTAPI/src/main/java/com/rikhi/experimentation/PerformanceMetricsData.java;4176037799/1;/RESTAPI/src/main/java/com/rikhi/experimentation/RESTAPIClient.java;940135160/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_0jV3QPY9EeynmLUwrt2S0Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_0jV3QfY9EeynmLUwrt2S0Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_0jV3QvY9EeynmLUwrt2S0Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_0jWeUPY9EeynmLUwrt2S0Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_0jWeUfY9EeynmLUwrt2S0Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_0jWeUvY9EeynmLUwrt2S0Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_0jWeU_Y9EeynmLUwrt2S0Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_0jWeVPY9EeynmLUwrt2S0Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_0jXFYPY9EeynmLUwrt2S0Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_0i3WIPY9EeynmLUwrt2S0Q" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_0i3WIfY9EeynmLUwrt2S0Q" name="rikhi">
+        <packagedElement xmi:type="uml:Package" xmi:id="_0i6ZcPY9EeynmLUwrt2S0Q" name="experimentation">
+          <packagedElement xmi:type="uml:Class" xmi:id="_0jUpIPY9EeynmLUwrt2S0Q" name="APIPerfCollector" isAbstract="true">
+            <ownedAttribute xmi:id="_0lWpcPY9EeynmLUwrt2S0Q" name="featureName">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0lX3kPY9EeynmLUwrt2S0Q" name="apiString">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0lYeoPY9EeynmLUwrt2S0Q" name="MAX_NUM_CONCURRENT_CLIENTS">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lYeofY9EeynmLUwrt2S0Q" value="4"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0lYeo_Y9EeynmLUwrt2S0Q" name="MAX_RUN_TIME_MINUTES">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lZFsPY9EeynmLUwrt2S0Q" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0lZswPY9EeynmLUwrt2S0Q" name="WAIT_TIME_BETWEEN_REQUESTS_MS">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lZswfY9EeynmLUwrt2S0Q" value="1000"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0laT0fY9EeynmLUwrt2S0Q" name="isLogging">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0laT0vY9EeynmLUwrt2S0Q" value="true"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0la64fY9EeynmLUwrt2S0Q" name="perfMetrices" type="_0joyMvY9EeynmLUwrt2S0Q" association="_0l7RMPY9EeynmLUwrt2S0Q"/>
+            <interfaceRealization xmi:id="_0k9A0PY9EeynmLUwrt2S0Q" client="_0jUpIPY9EeynmLUwrt2S0Q" supplier="_0joyMPY9EeynmLUwrt2S0Q" contract="_0joyMPY9EeynmLUwrt2S0Q"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l1KkPY9EeynmLUwrt2S0Q" name="printMessage" specification="_0jYTgPY9EeynmLUwrt2S0Q">
+              <ownedParameter xmi:id="_0l1KkfY9EeynmLUwrt2S0Q" name="message">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>if(isLogging)&#xD;
+		System.out.println(Thread.currentThread().getName()+&quot;--&quot;+message);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0jYTgPY9EeynmLUwrt2S0Q" name="printMessage" method="_0l1KkPY9EeynmLUwrt2S0Q">
+              <ownedParameter xmi:id="_0jYTgfY9EeynmLUwrt2S0Q" name="message">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0jaIsPY9EeynmLUwrt2S0Q" name="KrakenAPINoArgsPerfCollector" isAbstract="true">
+            <generalization xmi:id="_0lJ1IPY9EeynmLUwrt2S0Q" general="_0jUpIPY9EeynmLUwrt2S0Q"/>
+            <ownedAttribute xmi:id="_0lbh8fY9EeynmLUwrt2S0Q" name="runTickerDataAPIConcurrently" type="_0lBSQPY9EeynmLUwrt2S0Q" association="_0l74QfY9EeynmLUwrt2S0Q">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lcwEPY9EeynmLUwrt2S0Q" value="() -> {&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Max Time to run the loop&#xD;&#xA;&#x9;&#x9;long endRunTime = System.nanoTime() + TimeUnit.NANOSECONDS.convert(MAX_RUN_TIME_MINUTES, TimeUnit.MINUTES);&#xD;&#xA;&#x9;&#x9;//Total requests from a single client/thread&#xD;&#xA;&#x9;&#x9;int requestCount = 0;&#xD;&#xA;&#x9;&#x9;//Average of response time for a single client/thread&#xD;&#xA;&#x9;&#x9;double avgGetTickerData = 0L;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;//HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;//run for MAX_RUN_TIME_MINUTES minutes&#xD;&#xA;&#x9;&#x9;while (System.nanoTime() &lt; endRunTime) {&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//ToDo: Tried to avoid creating new client every time&#xD;&#xA;&#x9;&#x9;&#x9;//The current program was hanging after 2 requests from the same client&#xD;&#xA;&#x9;&#x9;&#x9;HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;&#x9;long start = System.currentTimeMillis();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//invoke the service&#xD;&#xA;&#x9;&#x9;&#x9;int response = processRequest(httpClient);&#xD;&#xA;&#x9;&#x9;&#x9;long end = System.currentTimeMillis();&#xD;&#xA;&#x9;&#x9;&#x9;long timeTaken = end - start;&#xD;&#xA;&#x9;&#x9;&#x9;perfMetrices.numberOfRequests.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;if(response==200) { //storing only successful request stats&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;++requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfSuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;avgGetTickerData = (avgGetTickerData * (requestCount - 1) + timeTaken) / requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(&quot;Total Request Counter:&quot;+perfMetrices.numberOfRequests.get()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+&quot;this Thread Request Counter:&quot;+requestCount &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot;--&quot; + response + &quot;--&quot; + (timeTaken) + &quot;ms&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; running average:&quot; + avgGetTickerData);&#xD;&#xA;&#x9;&#x9;&#x9;}else {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfUnsuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;try {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//do not overload the server, sleep for 1 sec after everyrequest&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Thread.sleep(WAIT_TIME_BETWEEN_REQUESTS_MS);&#xD;&#xA;&#x9;&#x9;&#x9;} catch (InterruptedException e) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;// TODO Auto-generated catch block&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(Thread.currentThread().getName()+&quot;:Exception-&quot;+e.getMessage());&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;return avgGetTickerData;&#xD;&#xA;&#x9;}"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l1xoPY9EeynmLUwrt2S0Q" name="collect" specification="_0jbW0PY9EeynmLUwrt2S0Q">
+              <language>java</language>
+              <body>ExecutorService executorService = Executors.newFixedThreadPool(MAX_NUM_CONCURRENT_CLIENTS);&#xD;
+		List&lt;Callable&lt;Double>> taskList = new ArrayList&lt;Callable&lt;Double>>(MAX_NUM_CONCURRENT_CLIENTS);&#xD;
+		List&lt;Future&lt;Double>> futures;&#xD;
+		Double avgForAPI=0d;&#xD;
+		int tempNumClients=0;&#xD;
+&#xD;
+		for (int i = 1; i &lt;= MAX_NUM_CONCURRENT_CLIENTS; i++) {&#xD;
+			taskList.add(runTickerDataAPIConcurrently);&#xD;
+		}&#xD;
+&#xD;
+		try {&#xD;
+			futures = executorService.invokeAll(taskList);&#xD;
+			for (Future&lt;Double> future : futures) {&#xD;
+				printMessage(future.get().toString());&#xD;
+				tempNumClients++;&#xD;
+				avgForAPI=((avgForAPI*(tempNumClients-1))+future.get().longValue())/tempNumClients;&#xD;
+				&#xD;
+			}&#xD;
+&#xD;
+		} catch (InterruptedException e1) {&#xD;
+			// TODO Auto-generated catch block&#xD;
+			e1.printStackTrace();&#xD;
+		} catch (ExecutionException e) {&#xD;
+			// TODO Auto-generated catch block&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+		&#xD;
+		printMessage(&quot;runTickerDataAPIConcurrently Avg:&quot;+avgForAPI);&#xD;
+		perfMetrices.avgRequestExecTimePerClient=avgForAPI;&#xD;
+		perfMetrices.successfulResponsesPercent=&#xD;
+				(100*(perfMetrices.numberOfSuccessfulResponses.get()))/perfMetrices.numberOfRequests.get();&#xD;
+		&#xD;
+		try {&#xD;
+			executorService.awaitTermination(10, TimeUnit.SECONDS);//wait for 10 seconds&#xD;
+		} catch (InterruptedException e) {&#xD;
+			// TODO Auto-generated catch block&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+		executorService.shutdownNow();&#xD;
+		&#xD;
+		printMessage(&quot;perfMetrices:&quot;+perfMetrices);&#xD;
+&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l1xofY9EeynmLUwrt2S0Q" name="processRequest" specification="_0lSYAPY9EeynmLUwrt2S0Q">
+              <ownedParameter xmi:id="_0l1xovY9EeynmLUwrt2S0Q" name="httpClient" type="_0lGx0fY9EeynmLUwrt2S0Q"/>
+              <ownedParameter xmi:id="_0l1xo_Y9EeynmLUwrt2S0Q" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>int statusCode = -1;&#xD;
+		try {&#xD;
+			printMessage(&quot;Preparing  Request&quot;);&#xD;
+			HttpGet getRequest = new HttpGet(apiString);&#xD;
+			&#xD;
+			HttpResponse response = httpClient.execute(getRequest);&#xD;
+			printMessage(&quot;Sent Request&quot;);&#xD;
+&#xD;
+			statusCode = response.getStatusLine().getStatusCode();&#xD;
+			printMessage(&quot;Received  Response&quot; + statusCode);&#xD;
+&#xD;
+			if (statusCode != 200) {&#xD;
+				printMessage(&quot;Failed Response HTTP error code : &quot; + statusCode);&#xD;
+			}&#xD;
+&#xD;
+		} catch (ClientProtocolException e) {&#xD;
+			printMessage(&quot;Failed : ClientProtocolException : &quot; + e.getMessage());&#xD;
+&#xD;
+		} catch (IOException e) {&#xD;
+			printMessage(&quot;Failed : IOException : &quot; + e.getMessage());&#xD;
+		}&#xD;
+&#xD;
+		return statusCode;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0jbW0PY9EeynmLUwrt2S0Q" name="collect" method="_0l1xoPY9EeynmLUwrt2S0Q"/>
+            <ownedOperation xmi:id="_0lSYAPY9EeynmLUwrt2S0Q" name="processRequest" method="_0l1xofY9EeynmLUwrt2S0Q">
+              <ownedParameter xmi:id="_0lS_EPY9EeynmLUwrt2S0Q" name="httpClient" type="_0lGx0fY9EeynmLUwrt2S0Q"/>
+              <ownedParameter xmi:id="_0lS_EfY9EeynmLUwrt2S0Q" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0jeaIPY9EeynmLUwrt2S0Q" name="KrakenAPIWithArgsPerfCollector" isAbstract="true">
+            <generalization xmi:id="_0lLqUPY9EeynmLUwrt2S0Q" general="_0jUpIPY9EeynmLUwrt2S0Q"/>
+            <ownedAttribute xmi:id="_0ldXIfY9EeynmLUwrt2S0Q" name="symbols" visibility="protected">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0ldXIvY9EeynmLUwrt2S0Q" value="*"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0lelQPY9EeynmLUwrt2S0Q" name="runsymbolDataAPIConcurrently" type="_0lBSQPY9EeynmLUwrt2S0Q" association="_0l8fUfY9EeynmLUwrt2S0Q">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lfMUfY9EeynmLUwrt2S0Q" value="() -> {&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Max Time to run the loop&#xD;&#xA;&#x9;&#x9;long endRunTime = System.nanoTime() + TimeUnit.NANOSECONDS.convert(MAX_RUN_TIME_MINUTES, TimeUnit.MINUTES);&#xD;&#xA;&#x9;&#x9;//Total requests from a single client/thread&#xD;&#xA;&#x9;&#x9;int requestCount = 0;&#xD;&#xA;&#x9;&#x9;//Average of response time for a single client/thread&#xD;&#xA;&#x9;&#x9;double avgGetsymbolData = 0L;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;//HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;//run for MAX_RUN_TIME_MINUTES minutes&#xD;&#xA;&#x9;&#x9;while (System.nanoTime() &lt; endRunTime) {&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//ToDo: Tried to avoid creating new client every time&#xD;&#xA;&#x9;&#x9;&#x9;//The current program was hanging after 2 requests from the same client&#xD;&#xA;&#x9;&#x9;&#x9;HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;&#x9;long start = System.currentTimeMillis();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//trying with 2 symbols, even-odd positions&#xD;&#xA;&#x9;&#x9;&#x9;//incrementing the total requests&#xD;&#xA;&#x9;&#x9;&#x9;String symbol = symbols[requestCount % symbols.length];&#xD;&#xA;&#x9;&#x9;&#x9;//invoke the service&#xD;&#xA;&#x9;&#x9;&#x9;int response = processRequest(httpClient, symbol);&#xD;&#xA;&#x9;&#x9;&#x9;long end = System.currentTimeMillis();&#xD;&#xA;&#x9;&#x9;&#x9;long timeTaken = end - start;&#xD;&#xA;&#x9;&#x9;&#x9;perfMetrices.numberOfRequests.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;if(response==200) { //storing only successful request stats&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;++requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfSuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;avgGetsymbolData = (avgGetsymbolData * (requestCount - 1) + timeTaken) / requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(&quot;Total Request Counter:&quot;+perfMetrices.numberOfRequests.get()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+&quot;this Thread Request Counter:&quot;+requestCount &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot;--&quot; + symbol + &quot;--&quot; + response + &quot;--&quot; + (timeTaken) + &quot;ms&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; running average:&quot; + avgGetsymbolData);&#xD;&#xA;&#x9;&#x9;&#x9;}else {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfUnsuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;try {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//do not overload the server, sleep for 1 sec after every request&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Thread.sleep(WAIT_TIME_BETWEEN_REQUESTS_MS);&#xD;&#xA;&#x9;&#x9;&#x9;} catch (InterruptedException e) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;// TODO Auto-generated catch block&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(Thread.currentThread().getName()+&quot;:Exception-&quot;+e.getMessage());&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;return avgGetsymbolData;&#xD;&#xA;&#x9;}"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l1xpPY9EeynmLUwrt2S0Q" name="collect" specification="_0jfoQPY9EeynmLUwrt2S0Q">
+              <language>java</language>
+              <body>ExecutorService executorService = Executors.newFixedThreadPool(MAX_NUM_CONCURRENT_CLIENTS);&#xD;
+		List&lt;Callable&lt;Double>> taskList = new ArrayList&lt;Callable&lt;Double>>(MAX_NUM_CONCURRENT_CLIENTS);&#xD;
+		List&lt;Future&lt;Double>> futures;&#xD;
+		Double avgForAPI=0d;&#xD;
+		int tempNumClients=0;&#xD;
+&#xD;
+		for (int i = 1; i &lt;= MAX_NUM_CONCURRENT_CLIENTS; i++) {&#xD;
+			taskList.add(runsymbolDataAPIConcurrently);&#xD;
+		}&#xD;
+&#xD;
+		try {&#xD;
+			futures = executorService.invokeAll(taskList);&#xD;
+			for (Future&lt;Double> future : futures) {&#xD;
+				printMessage(future.get().toString());&#xD;
+				tempNumClients++;&#xD;
+				avgForAPI=((avgForAPI*(tempNumClients-1))+future.get().longValue())/tempNumClients;&#xD;
+				&#xD;
+			}&#xD;
+&#xD;
+		} catch (InterruptedException e1) {&#xD;
+			// TODO Auto-generated catch block&#xD;
+			e1.printStackTrace();&#xD;
+		} catch (ExecutionException e) {&#xD;
+			// TODO Auto-generated catch block&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+		&#xD;
+		printMessage(&quot;runsymbolDataAPIConcurrently Avg:&quot;+avgForAPI);&#xD;
+		perfMetrices.avgRequestExecTimePerClient=avgForAPI;&#xD;
+		perfMetrices.successfulResponsesPercent=&#xD;
+				(100*(perfMetrices.numberOfSuccessfulResponses.get()))/perfMetrices.numberOfRequests.get();&#xD;
+		&#xD;
+		try {&#xD;
+			executorService.awaitTermination(10, TimeUnit.SECONDS);//wait for 10 seconds&#xD;
+		} catch (InterruptedException e) {&#xD;
+			// TODO Auto-generated catch block&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+		executorService.shutdownNow();&#xD;
+		&#xD;
+		printMessage(&quot;perfMetrices:&quot;+perfMetrices);&#xD;
+&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l2YsPY9EeynmLUwrt2S0Q" name="processRequest" specification="_0lTmIPY9EeynmLUwrt2S0Q">
+              <ownedParameter xmi:id="_0l2YsfY9EeynmLUwrt2S0Q" name="httpClient" type="_0lGx0fY9EeynmLUwrt2S0Q"/>
+              <ownedParameter xmi:id="_0l2YsvY9EeynmLUwrt2S0Q" name="symbol">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0l2Ys_Y9EeynmLUwrt2S0Q" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>int statusCode = -1;&#xD;
+		try {&#xD;
+			printMessage(&quot;Preparing symbol Request for:&quot; + symbol);&#xD;
+			HttpGet getRequest = new HttpGet(apiString + symbol);&#xD;
+			&#xD;
+			HttpResponse response = httpClient.execute(getRequest);&#xD;
+			printMessage(&quot;Sent symbol Request for:&quot; + symbol);&#xD;
+&#xD;
+			statusCode = response.getStatusLine().getStatusCode();&#xD;
+			printMessage(&quot;Received symbol Response for:&quot; + symbol + &quot; as:&quot; + statusCode);&#xD;
+&#xD;
+			if (statusCode != 200) {&#xD;
+				printMessage(&quot;Failed : symbol:&quot;+symbol+&quot; Response HTTP error code : &quot; + statusCode);&#xD;
+			}&#xD;
+&#xD;
+		} catch (ClientProtocolException e) {&#xD;
+			printMessage(&quot;Failed : ClientProtocolException : &quot; + e.getMessage());&#xD;
+&#xD;
+		} catch (IOException e) {&#xD;
+			printMessage(&quot;Failed : IOException : &quot; + e.getMessage());&#xD;
+		}&#xD;
+&#xD;
+		return statusCode;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0jfoQPY9EeynmLUwrt2S0Q" name="collect" method="_0l1xpPY9EeynmLUwrt2S0Q"/>
+            <ownedOperation xmi:id="_0lTmIPY9EeynmLUwrt2S0Q" name="processRequest" method="_0l2YsPY9EeynmLUwrt2S0Q">
+              <ownedParameter xmi:id="_0lUNMPY9EeynmLUwrt2S0Q" name="httpClient" type="_0lGx0fY9EeynmLUwrt2S0Q"/>
+              <ownedParameter xmi:id="_0lUNMfY9EeynmLUwrt2S0Q" name="symbol">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0lUNMvY9EeynmLUwrt2S0Q" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0jjSoPY9EeynmLUwrt2S0Q" name="KrakenAssetsAPIPerfCollector">
+            <generalization xmi:id="_0lM4cPY9EeynmLUwrt2S0Q" general="_0jaIsPY9EeynmLUwrt2S0Q"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l2YtPY9EeynmLUwrt2S0Q" name="KrakenAssetsAPIPerfCollector" specification="_0jj5sPY9EeynmLUwrt2S0Q">
+              <ownedParameter xmi:id="_0l2YtfY9EeynmLUwrt2S0Q" type="_0jjSoPY9EeynmLUwrt2S0Q" direction="return"/>
+              <language>java</language>
+              <body>super();&#xD;
+		perfMetrices=new PerformanceMetricsData();&#xD;
+		perfMetrices.metricsKeyName=&quot;KrakenSsetsAPI&quot;;&#xD;
+		perfMetrices.numberOfConcurrentClients=MAX_NUM_CONCURRENT_CLIENTS;&#xD;
+		apiString=&quot;https://api.kraken.com/0/public/Assets&quot;;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l2_wPY9EeynmLUwrt2S0Q" name="collect" specification="_0jkgw_Y9EeynmLUwrt2S0Q">
+              <language>java</language>
+              <body>super.collect();&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0jj5sPY9EeynmLUwrt2S0Q" name="KrakenAssetsAPIPerfCollector" method="_0l2YtPY9EeynmLUwrt2S0Q">
+              <eAnnotations xmi:id="_0jkgwPY9EeynmLUwrt2S0Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0jkgwfY9EeynmLUwrt2S0Q" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_0jkgwvY9EeynmLUwrt2S0Q" type="_0jjSoPY9EeynmLUwrt2S0Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0jkgw_Y9EeynmLUwrt2S0Q" name="collect" method="_0l2_wPY9EeynmLUwrt2S0Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0jlu4PY9EeynmLUwrt2S0Q" name="KrakenTickerAPIPerfCollector">
+            <generalization xmi:id="_0lM4cfY9EeynmLUwrt2S0Q" general="_0jeaIPY9EeynmLUwrt2S0Q"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l2_wfY9EeynmLUwrt2S0Q" name="KrakenTickerAPIPerfCollector" specification="_0jmV8PY9EeynmLUwrt2S0Q">
+              <ownedParameter xmi:id="_0l2_wvY9EeynmLUwrt2S0Q" type="_0jlu4PY9EeynmLUwrt2S0Q" direction="return"/>
+              <language>java</language>
+              <body>super();&#xD;
+		perfMetrices=new PerformanceMetricsData();&#xD;
+		perfMetrices.metricsKeyName=&quot;KrakenTickerAPI&quot;;&#xD;
+		perfMetrices.numberOfConcurrentClients=MAX_NUM_CONCURRENT_CLIENTS;&#xD;
+		symbols = new String[]{&quot;XBTUSD&quot;, &quot;XBTGBP&quot;};&#xD;
+		apiString=&quot;https://api.kraken.com/0/public/Ticker?pair=&quot;;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l2_w_Y9EeynmLUwrt2S0Q" name="collect" specification="_0jm9A_Y9EeynmLUwrt2S0Q">
+              <language>java</language>
+              <body>super.collect();&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0jmV8PY9EeynmLUwrt2S0Q" name="KrakenTickerAPIPerfCollector" method="_0l2_wfY9EeynmLUwrt2S0Q">
+              <eAnnotations xmi:id="_0jm9APY9EeynmLUwrt2S0Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0jm9AfY9EeynmLUwrt2S0Q" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_0jm9AvY9EeynmLUwrt2S0Q" type="_0jlu4PY9EeynmLUwrt2S0Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0jm9A_Y9EeynmLUwrt2S0Q" name="collect" method="_0l2_w_Y9EeynmLUwrt2S0Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_0joyMPY9EeynmLUwrt2S0Q" name="PerformanceDataCollector">
+            <ownedOperation xmi:id="_0joyMfY9EeynmLUwrt2S0Q" name="collect" isAbstract="true"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0joyMvY9EeynmLUwrt2S0Q" name="PerformanceMetricsData">
+            <ownedAttribute xmi:id="_0lgacPY9EeynmLUwrt2S0Q" name="metricsKeyName">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0lhBgPY9EeynmLUwrt2S0Q" name="numberOfConcurrentClients">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0lwSEPY9EeynmLUwrt2S0Q" name="numberOfRequests" type="_0lM4cvY9EeynmLUwrt2S0Q" association="_0l9tcPY9EeynmLUwrt2S0Q">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lwSEfY9EeynmLUwrt2S0Q" value="new AtomicInteger()"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0lw5IPY9EeynmLUwrt2S0Q" name="numberOfSuccessfulResponses" type="_0lM4cvY9EeynmLUwrt2S0Q" association="_0l-UgfY9EeynmLUwrt2S0Q">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lw5IfY9EeynmLUwrt2S0Q" value="new AtomicInteger()"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0lxgMfY9EeynmLUwrt2S0Q" name="numberOfUnsuccessfulResponses" type="_0lM4cvY9EeynmLUwrt2S0Q" association="_0l-7kfY9EeynmLUwrt2S0Q">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lxgMvY9EeynmLUwrt2S0Q" value="new AtomicInteger()"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0lyHQPY9EeynmLUwrt2S0Q" name="avgRequestExecTimePerClient">
+              <eAnnotations xmi:id="_0lyHQfY9EeynmLUwrt2S0Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0lyHQvY9EeynmLUwrt2S0Q" key="volatile"/>
+              </eAnnotations>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0lyuUfY9EeynmLUwrt2S0Q" name="successfulResponsesPercent">
+              <eAnnotations xmi:id="_0lyuUvY9EeynmLUwrt2S0Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0lyuU_Y9EeynmLUwrt2S0Q" key="volatile"/>
+              </eAnnotations>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0lzVYfY9EeynmLUwrt2S0Q" name="permissibleAvgRequestExecTimePerClient">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lzVYvY9EeynmLUwrt2S0Q" value="200"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0lz8cfY9EeynmLUwrt2S0Q" name="permissibleSuccessfulResponsesPercent">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0lz8cvY9EeynmLUwrt2S0Q" value="90"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l2_xPY9EeynmLUwrt2S0Q" name="toString" specification="_0jrOcPY9EeynmLUwrt2S0Q">
+              <ownedParameter xmi:id="_0l2_xfY9EeynmLUwrt2S0Q" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return &quot;[&quot;+metricsKeyName&#xD;
+				+&quot;,numberOfConcurrentClients&quot;+numberOfConcurrentClients&#xD;
+				+&quot;,numberOfRequests=&quot;+numberOfRequests.get()&#xD;
+				+&quot;,numberOfSuccessfulResponses=&quot;+numberOfSuccessfulResponses.get()&#xD;
+				+&quot;,numberOfUnsuccessfulResponses=&quot;+numberOfUnsuccessfulResponses.get()&#xD;
+				+&quot;,avgRequestExecTimePerClient=&quot;+avgRequestExecTimePerClient&#xD;
+				+&quot;,successfulResponsesPercent=&quot;+successfulResponsesPercent&#xD;
+				+&quot;,permissibleAvgRequestExecTimePerClient&quot;+permissibleAvgRequestExecTimePerClient&#xD;
+				+&quot;,permissibleSuccessfulResponsesPercent=&quot;+permissibleSuccessfulResponsesPercent&#xD;
+				+&quot;]&quot;;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0jrOcPY9EeynmLUwrt2S0Q" name="toString" method="_0l2_xPY9EeynmLUwrt2S0Q">
+              <ownedParameter xmi:id="_0jrOcfY9EeynmLUwrt2S0Q" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0jtqsPY9EeynmLUwrt2S0Q" name="RESTAPIClient">
+            <ownedComment xmi:id="_0l4N4PY9EeynmLUwrt2S0Q">
+              <body>@author Rakesh Rikhi&#xD;
+ *</body>
+            </ownedComment>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0l3m0PY9EeynmLUwrt2S0Q" name="main" specification="_0juRwPY9EeynmLUwrt2S0Q">
+              <ownedParameter xmi:id="_0l3m0fY9EeynmLUwrt2S0Q" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0l3m0vY9EeynmLUwrt2S0Q" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>//PerformanceDataCollector tickerCollector=new KrakenTickerAPIPerfCollector();&#xD;
+		//tickerCollector.collect();&#xD;
+		&#xD;
+		PerformanceDataCollector tickerCollector=new KrakenAssetsAPIPerfCollector();&#xD;
+		tickerCollector.collect();&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0juRwPY9EeynmLUwrt2S0Q" name="main" isStatic="true" method="_0l3m0PY9EeynmLUwrt2S0Q">
+              <ownedParameter xmi:id="_0juRwfY9EeynmLUwrt2S0Q" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0juRwvY9EeynmLUwrt2S0Q" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0l7RMPY9EeynmLUwrt2S0Q" name="" memberEnd="_0l7RMfY9EeynmLUwrt2S0Q _0la64fY9EeynmLUwrt2S0Q">
+            <ownedEnd xmi:id="_0l7RMfY9EeynmLUwrt2S0Q" name="" type="_0jUpIPY9EeynmLUwrt2S0Q" association="_0l7RMPY9EeynmLUwrt2S0Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0l74QfY9EeynmLUwrt2S0Q" name="" memberEnd="_0l74QvY9EeynmLUwrt2S0Q _0lbh8fY9EeynmLUwrt2S0Q">
+            <ownedEnd xmi:id="_0l74QvY9EeynmLUwrt2S0Q" name="" type="_0jaIsPY9EeynmLUwrt2S0Q" association="_0l74QfY9EeynmLUwrt2S0Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0l8fUfY9EeynmLUwrt2S0Q" name="" memberEnd="_0l8fUvY9EeynmLUwrt2S0Q _0lelQPY9EeynmLUwrt2S0Q">
+            <ownedEnd xmi:id="_0l8fUvY9EeynmLUwrt2S0Q" name="" type="_0jeaIPY9EeynmLUwrt2S0Q" association="_0l8fUfY9EeynmLUwrt2S0Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0l9tcPY9EeynmLUwrt2S0Q" name="" memberEnd="_0l9tcfY9EeynmLUwrt2S0Q _0lwSEPY9EeynmLUwrt2S0Q">
+            <ownedEnd xmi:id="_0l9tcfY9EeynmLUwrt2S0Q" name="" type="_0joyMvY9EeynmLUwrt2S0Q" association="_0l9tcPY9EeynmLUwrt2S0Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0l-UgfY9EeynmLUwrt2S0Q" name="" memberEnd="_0l-UgvY9EeynmLUwrt2S0Q _0lw5IPY9EeynmLUwrt2S0Q">
+            <ownedEnd xmi:id="_0l-UgvY9EeynmLUwrt2S0Q" name="" type="_0joyMvY9EeynmLUwrt2S0Q" association="_0l-UgfY9EeynmLUwrt2S0Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0l-7kfY9EeynmLUwrt2S0Q" name="" memberEnd="_0l-7kvY9EeynmLUwrt2S0Q _0lxgMfY9EeynmLUwrt2S0Q">
+            <ownedEnd xmi:id="_0l-7kvY9EeynmLUwrt2S0Q" name="" type="_0joyMvY9EeynmLUwrt2S0Q" association="_0l-7kfY9EeynmLUwrt2S0Q"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_0i81sPY9EeynmLUwrt2S0Q" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_0i9cwPY9EeynmLUwrt2S0Q" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_0k-O8PY9EeynmLUwrt2S0Q" name="IOException"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_0i9cwfY9EeynmLUwrt2S0Q" name="util">
+        <packagedElement xmi:type="uml:Package" xmi:id="_0i-D0PY9EeynmLUwrt2S0Q" name="concurrent">
+          <packagedElement xmi:type="uml:Package" xmi:id="_0jJC8PY9EeynmLUwrt2S0Q" name="atomic">
+            <packagedElement xmi:type="uml:Class" xmi:id="_0lM4cvY9EeynmLUwrt2S0Q" name="AtomicInteger"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_0lBSQPY9EeynmLUwrt2S0Q" name="Callable"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0lB5UfY9EeynmLUwrt2S0Q" name="ExecutionException"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_0lCgYfY9EeynmLUwrt2S0Q" name="ExecutorService"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0lDHcfY9EeynmLUwrt2S0Q" name="Executors"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_0lEVkPY9EeynmLUwrt2S0Q" name="Future"/>
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_0lE8oPY9EeynmLUwrt2S0Q" name="TimeUnit"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0k_dEfY9EeynmLUwrt2S0Q" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_0lAEIfY9EeynmLUwrt2S0Q" name="List"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_0i-D0fY9EeynmLUwrt2S0Q" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_0i-q4PY9EeynmLUwrt2S0Q" name="apache">
+        <packagedElement xmi:type="uml:Package" xmi:id="_0i-q4fY9EeynmLUwrt2S0Q" name="http">
+          <packagedElement xmi:type="uml:Package" xmi:id="_0i-q4vY9EeynmLUwrt2S0Q" name="client">
+            <packagedElement xmi:type="uml:Package" xmi:id="_0i-q4_Y9EeynmLUwrt2S0Q" name="methods">
+              <packagedElement xmi:type="uml:Class" xmi:id="_0lH_8PY9EeynmLUwrt2S0Q" name="HttpGet"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_0lGKwfY9EeynmLUwrt2S0Q" name="ClientProtocolException"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_0lGx0fY9EeynmLUwrt2S0Q" name="HttpClient"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_0i-q5PY9EeynmLUwrt2S0Q" name="impl">
+            <packagedElement xmi:type="uml:Package" xmi:id="_0i-q5fY9EeynmLUwrt2S0Q" name="client">
+              <packagedElement xmi:type="uml:Class" xmi:id="_0lInAfY9EeynmLUwrt2S0Q" name="HttpClientBuilder"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_0lFjsPY9EeynmLUwrt2S0Q" name="HttpResponse"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_0dOBIPY9EeynmLUwrt2S0Q">
+      <eAnnotations xmi:id="_0dOBIfY9EeynmLUwrt2S0Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_0dOoMPY9EeynmLUwrt2S0Q" base_Package="_0V87gPY9EeynmLUwrt2S0Q">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0jb94PY9EeynmLUwrt2S0Q" base_Element="_0jbW0PY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Annotations xmi:id="_0jck8PY9EeynmLUwrt2S0Q" base_Element="_0jbW0PY9EeynmLUwrt2S0Q">
+    <annotations xmi:id="_0jck8fY9EeynmLUwrt2S0Q" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0jgPUPY9EeynmLUwrt2S0Q" base_Element="_0jfoQPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Annotations xmi:id="_0jg2YPY9EeynmLUwrt2S0Q" base_Element="_0jfoQPY9EeynmLUwrt2S0Q">
+    <annotations xmi:id="_0jg2YfY9EeynmLUwrt2S0Q" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0jlH0PY9EeynmLUwrt2S0Q" base_Element="_0jkgw_Y9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Annotations xmi:id="_0jlH0fY9EeynmLUwrt2S0Q" base_Element="_0jkgw_Y9EeynmLUwrt2S0Q">
+    <annotations xmi:id="_0jlH0vY9EeynmLUwrt2S0Q" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0jm9BPY9EeynmLUwrt2S0Q" base_Element="_0jm9A_Y9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Annotations xmi:id="_0jnkEPY9EeynmLUwrt2S0Q" base_Element="_0jm9A_Y9EeynmLUwrt2S0Q">
+    <annotations xmi:id="_0jnkEfY9EeynmLUwrt2S0Q" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_0k_dEPY9EeynmLUwrt2S0Q" base_Element="_0k-O8PY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0lAEIPY9EeynmLUwrt2S0Q" base_Element="_0k_dEfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0lArMPY9EeynmLUwrt2S0Q" base_Element="_0lAEIfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0lB5UPY9EeynmLUwrt2S0Q" base_Element="_0lBSQPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0lCgYPY9EeynmLUwrt2S0Q" base_Element="_0lB5UfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0lDHcPY9EeynmLUwrt2S0Q" base_Element="_0lCgYfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0lDugPY9EeynmLUwrt2S0Q" base_Element="_0lDHcfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0lEVkfY9EeynmLUwrt2S0Q" base_Element="_0lEVkPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0lE8ofY9EeynmLUwrt2S0Q" base_Element="_0lE8oPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0lGKwPY9EeynmLUwrt2S0Q" base_Element="_0lFjsPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0lGx0PY9EeynmLUwrt2S0Q" base_Element="_0lGKwfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0lHY4PY9EeynmLUwrt2S0Q" base_Element="_0lGx0fY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0lInAPY9EeynmLUwrt2S0Q" base_Element="_0lH_8PY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0lJOEPY9EeynmLUwrt2S0Q" base_Element="_0lInAfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0lOGkPY9EeynmLUwrt2S0Q" base_Element="_0lM4cvY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0lXQgPY9EeynmLUwrt2S0Q" base_Element="_0lWpcPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0lX3kfY9EeynmLUwrt2S0Q" base_Element="_0lX3kPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0lYeovY9EeynmLUwrt2S0Q" base_Element="_0lYeoPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0lZFsfY9EeynmLUwrt2S0Q" base_Element="_0lYeo_Y9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0laT0PY9EeynmLUwrt2S0Q" base_Element="_0lZswPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0la64PY9EeynmLUwrt2S0Q" base_Element="_0laT0fY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0lbh8PY9EeynmLUwrt2S0Q" base_Element="_0la64fY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Generics xmi:id="_0lcJAPY9EeynmLUwrt2S0Q" genericsValue="Double" base_Element="_0lbh8fY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0ldXIPY9EeynmLUwrt2S0Q" base_Element="_0lbh8fY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Array xmi:id="_0ld-MPY9EeynmLUwrt2S0Q" base_Element="_0ldXIfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0ld-MfY9EeynmLUwrt2S0Q" base_Element="_0ldXIfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Generics xmi:id="_0lfMUPY9EeynmLUwrt2S0Q" genericsValue="Double" base_Element="_0lelQPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0lfzYPY9EeynmLUwrt2S0Q" base_Element="_0lelQPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0lgacfY9EeynmLUwrt2S0Q" base_Element="_0lgacPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0lvrAPY9EeynmLUwrt2S0Q" base_Element="_0lhBgPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0lwSEvY9EeynmLUwrt2S0Q" base_Element="_0lwSEPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0lxgMPY9EeynmLUwrt2S0Q" base_Element="_0lw5IPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0lxgM_Y9EeynmLUwrt2S0Q" base_Element="_0lxgMfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0lyuUPY9EeynmLUwrt2S0Q" base_Element="_0lyHQPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0lzVYPY9EeynmLUwrt2S0Q" base_Element="_0lyuUfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0lz8cPY9EeynmLUwrt2S0Q" base_Element="_0lzVYfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0lz8c_Y9EeynmLUwrt2S0Q" base_Element="_0lz8cfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0l74QPY9EeynmLUwrt2S0Q" base_Element="_0l7RMPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0l8fUPY9EeynmLUwrt2S0Q" base_Element="_0l74QfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0l9GYPY9EeynmLUwrt2S0Q" base_Element="_0l8fUfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0l-UgPY9EeynmLUwrt2S0Q" base_Element="_0l9tcPY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0l-7kPY9EeynmLUwrt2S0Q" base_Element="_0l-UgfY9EeynmLUwrt2S0Q"/>
+  <UMLLabProfile:Reference xmi:id="_0l_ioPY9EeynmLUwrt2S0Q" base_Element="_0l-7kfY9EeynmLUwrt2S0Q"/>
+</xmi:XMI>

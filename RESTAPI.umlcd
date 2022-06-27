@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_0XHZIPY9EeynmLUwrt2S0Q">
+  <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0i6ZcPY9EeynmLUwrt2S0Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_0ocZsPY9EeynmLUwrt2S0Q" sourceAnchor="195.0,0.0" targetAnchor="101.0,85.0" dashed="true" superClass="_0oZWYPY9EeynmLUwrt2S0Q" subClass="_0ogrKfY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0k9A0PY9EeynmLUwrt2S0Q"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_0ogrIPY9EeynmLUwrt2S0Q" sourceAnchor="391.0,96.0" targetAnchor="0.0,138.0" target="_0o2pafY9EeynmLUwrt2S0Q" source="_0ogrKfY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l7RMPY9EeynmLUwrt2S0Q"/>
+    <stereotypes xmi:id="_0ogrIfY9EeynmLUwrt2S0Q" name="Reference">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l74QPY9EeynmLUwrt2S0Q"/>
+    </stereotypes>
+    <nameVisual xmi:id="_0ogrIvY9EeynmLUwrt2S0Q" text="">
+      <visualProperties xmi:id="_1BRwcPY9EeynmLUwrt2S0Q" position="-3.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_0ogrI_Y9EeynmLUwrt2S0Q" aggregationKind="NONE" name="">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l7RMfY9EeynmLUwrt2S0Q"/>
+      <visualProperties xmi:id="_1BRJZfY9EeynmLUwrt2S0Q" position="19.0,-57.0"/>
+      <visibility xmi:id="_0ogrJPY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0ogrJfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_0ogrJvY9EeynmLUwrt2S0Q" aggregationKind="NONE" name="perfMetrices" navigable="true">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0la64fY9EeynmLUwrt2S0Q"/>
+      <visualProperties xmi:id="_1BSXgPY9EeynmLUwrt2S0Q" position="-180.0,2.0"/>
+      <visibility xmi:id="_0ogrJ_Y9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0ogrKPY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_0onY0PY9EeynmLUwrt2S0Q" sourceAnchor="248.0,0.0" targetAnchor="195.0,208.0" superClass="_0ogrKfY9EeynmLUwrt2S0Q" subClass="_0oqcIPY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lJ1IPY9EeynmLUwrt2S0Q"/>
+    <bendpoints xmi:id="_9Not4fY9EeynmLUwrt2S0Q" sourceY="-50" targetX="515" targetY="37"/>
+    <bendpoints xmi:id="_9Not4vY9EeynmLUwrt2S0Q" sourceX="-515" sourceY="-50" targetY="37"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_0op1EPY9EeynmLUwrt2S0Q" source="_0oqcIPY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l74QfY9EeynmLUwrt2S0Q"/>
+    <stereotypes xmi:id="_0op1EfY9EeynmLUwrt2S0Q" name="Reference">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l8fUPY9EeynmLUwrt2S0Q"/>
+    </stereotypes>
+    <nameVisual xmi:id="_0op1EvY9EeynmLUwrt2S0Q" text=""/>
+    <sourceRole xmi:id="_0op1E_Y9EeynmLUwrt2S0Q" aggregationKind="NONE" name="">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l74QvY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0op1FPY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0op1FfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_0op1FvY9EeynmLUwrt2S0Q" aggregationKind="NONE" name="runTickerDataAPIConcurrently" navigable="true">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lbh8fY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0op1F_Y9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0op1GPY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_0outkfY9EeynmLUwrt2S0Q" targetItem="_0ovUoPY9EeynmLUwrt2S0Q" sourceItem="_0outkPY9EeynmLUwrt2S0Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_0o00MPY9EeynmLUwrt2S0Q" source="_0o2pafY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l9tcPY9EeynmLUwrt2S0Q"/>
+    <stereotypes xmi:id="_0o00MfY9EeynmLUwrt2S0Q" name="Reference">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l-UgPY9EeynmLUwrt2S0Q"/>
+    </stereotypes>
+    <nameVisual xmi:id="_0o00MvY9EeynmLUwrt2S0Q" text=""/>
+    <sourceRole xmi:id="_0o00M_Y9EeynmLUwrt2S0Q" aggregationKind="NONE" name="">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l9tcfY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0o00NPY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o00NfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_0o00NvY9EeynmLUwrt2S0Q" aggregationKind="NONE" name="numberOfRequests" navigable="true">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lwSEPY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0o00N_Y9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o00OPY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_0o1bQPY9EeynmLUwrt2S0Q" source="_0o2pafY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l-UgfY9EeynmLUwrt2S0Q"/>
+    <stereotypes xmi:id="_0o1bQfY9EeynmLUwrt2S0Q" name="Reference">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l-7kPY9EeynmLUwrt2S0Q"/>
+    </stereotypes>
+    <nameVisual xmi:id="_0o1bQvY9EeynmLUwrt2S0Q" text=""/>
+    <sourceRole xmi:id="_0o1bQ_Y9EeynmLUwrt2S0Q" aggregationKind="NONE" name="">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l-UgvY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0o1bRPY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o1bRfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_0o1bRvY9EeynmLUwrt2S0Q" aggregationKind="NONE" name="numberOfSuccessfulResponses" navigable="true">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lw5IPY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0o1bR_Y9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o1bSPY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_0o2pYPY9EeynmLUwrt2S0Q" source="_0o2pafY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l-7kfY9EeynmLUwrt2S0Q"/>
+    <stereotypes xmi:id="_0o2pYfY9EeynmLUwrt2S0Q" name="Reference">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l_ioPY9EeynmLUwrt2S0Q"/>
+    </stereotypes>
+    <nameVisual xmi:id="_0o2pYvY9EeynmLUwrt2S0Q" text=""/>
+    <sourceRole xmi:id="_0o2pY_Y9EeynmLUwrt2S0Q" aggregationKind="NONE" name="">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l-7kvY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0o2pZPY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o2pZfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_0o2pZvY9EeynmLUwrt2S0Q" aggregationKind="NONE" name="numberOfUnsuccessfulResponses" navigable="true">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lxgMfY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0o2pZ_Y9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o2paPY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_0o9-IPY9EeynmLUwrt2S0Q" sourceAnchor="252.0,0.0" targetAnchor="248.0,116.0" superClass="_0oqcIPY9EeynmLUwrt2S0Q" subClass="_0o-lMPY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lM4cPY9EeynmLUwrt2S0Q"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_0pCPkPY9EeynmLUwrt2S0Q" sourceAnchor="253.0,0.0" targetAnchor="195.0,208.0" superClass="_0ogrKfY9EeynmLUwrt2S0Q" subClass="_0pGhAPY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lLqUPY9EeynmLUwrt2S0Q"/>
+    <bendpoints xmi:id="_9NoG0PY9EeynmLUwrt2S0Q" sourceY="-30" targetX="-398" targetY="37"/>
+    <bendpoints xmi:id="_9Not4PY9EeynmLUwrt2S0Q" sourceX="398" sourceY="-30" targetY="37"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_0pCPkfY9EeynmLUwrt2S0Q" source="_0pGhAPY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l8fUfY9EeynmLUwrt2S0Q"/>
+    <stereotypes xmi:id="_0pFS4_Y9EeynmLUwrt2S0Q" name="Reference">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l9GYPY9EeynmLUwrt2S0Q"/>
+    </stereotypes>
+    <nameVisual xmi:id="_0pFS4PY9EeynmLUwrt2S0Q" text=""/>
+    <sourceRole xmi:id="_0pFS4fY9EeynmLUwrt2S0Q" aggregationKind="NONE" name="">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l8fUvY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0pF58fY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0pF58PY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_0pFS4vY9EeynmLUwrt2S0Q" aggregationKind="NONE" name="runsymbolDataAPIConcurrently" navigable="true">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lelQPY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0pF58_Y9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0pF58vY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_0pKycPY9EeynmLUwrt2S0Q" sourceAnchor="240.0,0.0" targetAnchor="253.0,139.0" superClass="_0pGhAPY9EeynmLUwrt2S0Q" subClass="_0pLZgPY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lM4cfY9EeynmLUwrt2S0Q"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_0outkPY9EeynmLUwrt2S0Q" sourceConnectionVisual="_0outkfY9EeynmLUwrt2S0Q" text="@author Rakesh Rikhi&#xD;&#xA; *" item="_0ovUoPY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0l4N4PY9EeynmLUwrt2S0Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_0oZWYPY9EeynmLUwrt2S0Q" name="PerformanceDataCollector" subclassedBy="_0ocZsPY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0joyMPY9EeynmLUwrt2S0Q"/>
+    <visualProperties xmi:id="_0oZWYfY9EeynmLUwrt2S0Q" position="35.0,46.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_0oZWYvY9EeynmLUwrt2S0Q" label="+"/>
+    <operations xmi:id="_0oZWY_Y9EeynmLUwrt2S0Q" abstractOperation="true" name="collect">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0joyMfY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0oZWZPY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0oZWZfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_0ogrKfY9EeynmLUwrt2S0Q" name="APIPerfCollector" abstractClass="true" associationsOut="_0ogrIPY9EeynmLUwrt2S0Q" generalizations="_0ocZsPY9EeynmLUwrt2S0Q" subclassedBy="_0onY0PY9EeynmLUwrt2S0Q _0pCPkPY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jUpIPY9EeynmLUwrt2S0Q"/>
+    <visualProperties xmi:id="_0ogrKvY9EeynmLUwrt2S0Q" position="-59.0,186.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_0ogrK_Y9EeynmLUwrt2S0Q" label="+"/>
+    <attributes xmi:id="_0ogrLPY9EeynmLUwrt2S0Q" name="featureName">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lWpcPY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0ogrLfY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lXQgPY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0ogrLvY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0ogrL_Y9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0ogrMPY9EeynmLUwrt2S0Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0ogrMfY9EeynmLUwrt2S0Q" name="apiString">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lX3kPY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0ogrMvY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lX3kfY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0ogrM_Y9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0ogrNPY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0ogrNfY9EeynmLUwrt2S0Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0ogrNvY9EeynmLUwrt2S0Q" defaultValue="4" name="MAX_NUM_CONCURRENT_CLIENTS">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lYeoPY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0ogrN_Y9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lYeovY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0ogrOPY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0ogrOfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0ogrOvY9EeynmLUwrt2S0Q" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0ogrO_Y9EeynmLUwrt2S0Q" defaultValue="1" name="MAX_RUN_TIME_MINUTES">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lYeo_Y9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0ogrPPY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lZFsfY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0ogrPfY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0ogrPvY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0ogrP_Y9EeynmLUwrt2S0Q" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0ogrQPY9EeynmLUwrt2S0Q" defaultValue="1000" name="WAIT_TIME_BETWEEN_REQUESTS_MS">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lZswPY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0ogrQfY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0laT0PY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0ogrQvY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0ogrQ_Y9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0ogrRPY9EeynmLUwrt2S0Q" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0ogrRfY9EeynmLUwrt2S0Q" defaultValue="true" name="isLogging">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0laT0fY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0ogrRvY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0la64PY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0ogrR_Y9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0ogrSPY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0ogrSfY9EeynmLUwrt2S0Q" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0ogrSvY9EeynmLUwrt2S0Q" name="perfMetrices">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0la64fY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0ogrS_Y9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lbh8PY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0ogrTPY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0ogrTfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0ogrTvY9EeynmLUwrt2S0Q" name="PerformanceMetricsData">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0joyMvY9EeynmLUwrt2S0Q"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_0ogrT_Y9EeynmLUwrt2S0Q" name="printMessage">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jYTgPY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0ogrUPY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0ogrUfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <parameters xmi:id="_0ogrUvY9EeynmLUwrt2S0Q" name="message">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jYTgfY9EeynmLUwrt2S0Q"/>
+        <cardinality xmi:id="_0ogrU_Y9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+        <type xmi:id="_0ogrVPY9EeynmLUwrt2S0Q" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_0o2pafY9EeynmLUwrt2S0Q" name="PerformanceMetricsData" associationsIn="_0ogrIPY9EeynmLUwrt2S0Q" associationsOut="_0o00MPY9EeynmLUwrt2S0Q _0o1bQPY9EeynmLUwrt2S0Q _0o2pYPY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0joyMvY9EeynmLUwrt2S0Q"/>
+    <visualProperties xmi:id="_0o2pavY9EeynmLUwrt2S0Q" position="908.0,144.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_0o2pa_Y9EeynmLUwrt2S0Q" label="+"/>
+    <attributes xmi:id="_0o2pbPY9EeynmLUwrt2S0Q" name="metricsKeyName">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lgacPY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0o2pbfY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lgacfY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0o2pbvY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o2pb_Y9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0o2pcPY9EeynmLUwrt2S0Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0o2pcfY9EeynmLUwrt2S0Q" name="numberOfConcurrentClients">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lhBgPY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0o2pcvY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lvrAPY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0o2pc_Y9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o2pdPY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0o2pdfY9EeynmLUwrt2S0Q" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0o2pdvY9EeynmLUwrt2S0Q" defaultValue="new AtomicInteger()" name="numberOfRequests">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lwSEPY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0o2pd_Y9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lwSEvY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0o2pePY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o2pefY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0o2pevY9EeynmLUwrt2S0Q" name="AtomicInteger">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lM4cvY9EeynmLUwrt2S0Q"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0o2pe_Y9EeynmLUwrt2S0Q" defaultValue="new AtomicInteger()" name="numberOfSuccessfulResponses">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lw5IPY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0o2pfPY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lxgMPY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0o2pffY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o2pfvY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0o2pf_Y9EeynmLUwrt2S0Q" name="AtomicInteger">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lM4cvY9EeynmLUwrt2S0Q"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0o2pgPY9EeynmLUwrt2S0Q" defaultValue="new AtomicInteger()" name="numberOfUnsuccessfulResponses">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lxgMfY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0o2pgfY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lxgM_Y9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0o2pgvY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o2pg_Y9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0o2phPY9EeynmLUwrt2S0Q" name="AtomicInteger">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lM4cvY9EeynmLUwrt2S0Q"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0o2phfY9EeynmLUwrt2S0Q" name="avgRequestExecTimePerClient">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lyHQPY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0o2phvY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lyuUPY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0o2ph_Y9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o2piPY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0o2pifY9EeynmLUwrt2S0Q" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0o2pivY9EeynmLUwrt2S0Q" name="successfulResponsesPercent">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lyuUfY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0o2pi_Y9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lzVYPY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0o2pjPY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o2pjfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0o2pjvY9EeynmLUwrt2S0Q" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0o2pj_Y9EeynmLUwrt2S0Q" defaultValue="200" name="permissibleAvgRequestExecTimePerClient">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lzVYfY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0o2pkPY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lz8cPY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0o2pkfY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o2pkvY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0o2pk_Y9EeynmLUwrt2S0Q" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0o2plPY9EeynmLUwrt2S0Q" defaultValue="90" name="permissibleSuccessfulResponsesPercent">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lz8cfY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0o2plfY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lz8c_Y9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0o2plvY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o2pl_Y9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0o2pmPY9EeynmLUwrt2S0Q" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_0o2pmfY9EeynmLUwrt2S0Q" name="toString">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jrOcPY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0o2pmvY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o2pm_Y9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_0o2pnPY9EeynmLUwrt2S0Q">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jrOcfY9EeynmLUwrt2S0Q"/>
+        <type xmi:id="_0o2pnfY9EeynmLUwrt2S0Q" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_0pGhAPY9EeynmLUwrt2S0Q" name="KrakenAPIWithArgsPerfCollector" abstractClass="true" associationsOut="_0pCPkfY9EeynmLUwrt2S0Q" generalizations="_0pCPkPY9EeynmLUwrt2S0Q" subclassedBy="_0pKycPY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jeaIPY9EeynmLUwrt2S0Q"/>
+    <visualProperties xmi:id="_0pGhAfY9EeynmLUwrt2S0Q" position="-515.0,461.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_0pGhAvY9EeynmLUwrt2S0Q" label="+"/>
+    <attributes xmi:id="_0pGhA_Y9EeynmLUwrt2S0Q" name="symbols">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0ldXIfY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0pGhBPY9EeynmLUwrt2S0Q" name="Array">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0ld-MPY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_0pGhBfY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0ld-MfY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0pGhBvY9EeynmLUwrt2S0Q" label="#"/>
+      <cardinality xmi:id="_0pGhB_Y9EeynmLUwrt2S0Q" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_0pGhCPY9EeynmLUwrt2S0Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0pGhCfY9EeynmLUwrt2S0Q" defaultValue="() -> {&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Max Time to run the loop&#xD;&#xA;&#x9;&#x9;long endRunTime = System.nanoTime() + TimeUnit.NANOSECONDS.convert(MAX_RUN_TIME_MINUTES, TimeUnit.MINUTES);&#xD;&#xA;&#x9;&#x9;//Total requests from a single client/thread&#xD;&#xA;&#x9;&#x9;int requestCount = 0;&#xD;&#xA;&#x9;&#x9;//Average of response time for a single client/thread&#xD;&#xA;&#x9;&#x9;double avgGetsymbolData = 0L;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;//HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;//run for MAX_RUN_TIME_MINUTES minutes&#xD;&#xA;&#x9;&#x9;while (System.nanoTime() &lt; endRunTime) {&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//ToDo: Tried to avoid creating new client every time&#xD;&#xA;&#x9;&#x9;&#x9;//The current program was hanging after 2 requests from the same client&#xD;&#xA;&#x9;&#x9;&#x9;HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;&#x9;long start = System.currentTimeMillis();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//trying with 2 symbols, even-odd positions&#xD;&#xA;&#x9;&#x9;&#x9;//incrementing the total requests&#xD;&#xA;&#x9;&#x9;&#x9;String symbol = symbols[requestCount % symbols.length];&#xD;&#xA;&#x9;&#x9;&#x9;//invoke the service&#xD;&#xA;&#x9;&#x9;&#x9;int response = processRequest(httpClient, symbol);&#xD;&#xA;&#x9;&#x9;&#x9;long end = System.currentTimeMillis();&#xD;&#xA;&#x9;&#x9;&#x9;long timeTaken = end - start;&#xD;&#xA;&#x9;&#x9;&#x9;perfMetrices.numberOfRequests.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;if(response==200) { //storing only successful request stats&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;++requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfSuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;avgGetsymbolData = (avgGetsymbolData * (requestCount - 1) + timeTaken) / requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(&quot;Total Request Counter:&quot;+perfMetrices.numberOfRequests.get()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+&quot;this Thread Request Counter:&quot;+requestCount &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot;--&quot; + symbol + &quot;--&quot; + response + &quot;--&quot; + (timeTaken) + &quot;ms&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; running average:&quot; + avgGetsymbolData);&#xD;&#xA;&#x9;&#x9;&#x9;}else {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfUnsuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;try {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//do not overload the server, sleep for 1 sec after every request&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Thread.sleep(WAIT_TIME_BETWEEN_REQUESTS_MS);&#xD;&#xA;&#x9;&#x9;&#x9;} catch (InterruptedException e) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;// TODO Auto-generated catch block&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(Thread.currentThread().getName()+&quot;:Exception-&quot;+e.getMessage());&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;return avgGetsymbolData;&#xD;&#xA;&#x9;}" name="runsymbolDataAPIConcurrently">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lelQPY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0pGhCvY9EeynmLUwrt2S0Q" name="Generics">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lfMUPY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_0pGhC_Y9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lfzYPY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0pGhDPY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0pGhDfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0pGhDvY9EeynmLUwrt2S0Q" name="Callable">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lBSQPY9EeynmLUwrt2S0Q"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_0pGhD_Y9EeynmLUwrt2S0Q" name="collect">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jfoQPY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0pGhEPY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jgPUPY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_0pGhEfY9EeynmLUwrt2S0Q" name="Annotations">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jg2YPY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0pGhEvY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0pGhE_Y9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_0pGhFPY9EeynmLUwrt2S0Q" name="processRequest">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lTmIPY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0pGhFfY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0pGhFvY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_0pGhF_Y9EeynmLUwrt2S0Q">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lUNMvY9EeynmLUwrt2S0Q"/>
+        <type xmi:id="_0pGhGPY9EeynmLUwrt2S0Q" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_0pGhGfY9EeynmLUwrt2S0Q" name="httpClient">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lUNMPY9EeynmLUwrt2S0Q"/>
+        <cardinality xmi:id="_0pGhGvY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+        <type xmi:id="_0pGhG_Y9EeynmLUwrt2S0Q" name="HttpClient">
+          <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lGx0fY9EeynmLUwrt2S0Q"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_0pGhHPY9EeynmLUwrt2S0Q" name="symbol">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lUNMfY9EeynmLUwrt2S0Q"/>
+        <cardinality xmi:id="_0pGhHfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+        <type xmi:id="_0pGhHvY9EeynmLUwrt2S0Q" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_0pLZgPY9EeynmLUwrt2S0Q" name="KrakenTickerAPIPerfCollector" generalizations="_0pKycPY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jlu4PY9EeynmLUwrt2S0Q"/>
+    <visualProperties xmi:id="_0pLZgfY9EeynmLUwrt2S0Q" position="-502.0,702.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_0pLZgvY9EeynmLUwrt2S0Q" label="+"/>
+    <operations xmi:id="_0pLZg_Y9EeynmLUwrt2S0Q" name="KrakenTickerAPIPerfCollector">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jmV8PY9EeynmLUwrt2S0Q"/>
+      <keywords xmi:id="_0pLZhPY9EeynmLUwrt2S0Q" keyword="create"/>
+      <visibility xmi:id="_0pLZhfY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0pLZhvY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_0pLZh_Y9EeynmLUwrt2S0Q">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jm9AvY9EeynmLUwrt2S0Q"/>
+        <type xmi:id="_0pLZiPY9EeynmLUwrt2S0Q" name="KrakenTickerAPIPerfCollector">
+          <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jlu4PY9EeynmLUwrt2S0Q"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_0pLZifY9EeynmLUwrt2S0Q" name="collect">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jm9A_Y9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0pLZivY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jm9BPY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_0pLZi_Y9EeynmLUwrt2S0Q" name="Annotations">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jnkEPY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0pLZjPY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0pLZjfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_0oqcIPY9EeynmLUwrt2S0Q" name="KrakenAPINoArgsPerfCollector" abstractClass="true" associationsOut="_0op1EPY9EeynmLUwrt2S0Q" generalizations="_0onY0PY9EeynmLUwrt2S0Q" subclassedBy="_0o9-IPY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jaIsPY9EeynmLUwrt2S0Q"/>
+    <visualProperties xmi:id="_0oqcIfY9EeynmLUwrt2S0Q" position="403.0,481.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_0oqcIvY9EeynmLUwrt2S0Q" label="+"/>
+    <attributes xmi:id="_0oqcI_Y9EeynmLUwrt2S0Q" defaultValue="() -> {&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Max Time to run the loop&#xD;&#xA;&#x9;&#x9;long endRunTime = System.nanoTime() + TimeUnit.NANOSECONDS.convert(MAX_RUN_TIME_MINUTES, TimeUnit.MINUTES);&#xD;&#xA;&#x9;&#x9;//Total requests from a single client/thread&#xD;&#xA;&#x9;&#x9;int requestCount = 0;&#xD;&#xA;&#x9;&#x9;//Average of response time for a single client/thread&#xD;&#xA;&#x9;&#x9;double avgGetTickerData = 0L;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;//HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;//run for MAX_RUN_TIME_MINUTES minutes&#xD;&#xA;&#x9;&#x9;while (System.nanoTime() &lt; endRunTime) {&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//ToDo: Tried to avoid creating new client every time&#xD;&#xA;&#x9;&#x9;&#x9;//The current program was hanging after 2 requests from the same client&#xD;&#xA;&#x9;&#x9;&#x9;HttpClient httpClient = HttpClientBuilder.create().build();&#xD;&#xA;&#x9;&#x9;&#x9;long start = System.currentTimeMillis();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;//invoke the service&#xD;&#xA;&#x9;&#x9;&#x9;int response = processRequest(httpClient);&#xD;&#xA;&#x9;&#x9;&#x9;long end = System.currentTimeMillis();&#xD;&#xA;&#x9;&#x9;&#x9;long timeTaken = end - start;&#xD;&#xA;&#x9;&#x9;&#x9;perfMetrices.numberOfRequests.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;if(response==200) { //storing only successful request stats&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;++requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfSuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;avgGetTickerData = (avgGetTickerData * (requestCount - 1) + timeTaken) / requestCount;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(&quot;Total Request Counter:&quot;+perfMetrices.numberOfRequests.get()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+&quot;this Thread Request Counter:&quot;+requestCount &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot;--&quot; + response + &quot;--&quot; + (timeTaken) + &quot;ms&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; running average:&quot; + avgGetTickerData);&#xD;&#xA;&#x9;&#x9;&#x9;}else {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;perfMetrices.numberOfUnsuccessfulResponses.incrementAndGet();&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;try {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//do not overload the server, sleep for 1 sec after everyrequest&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Thread.sleep(WAIT_TIME_BETWEEN_REQUESTS_MS);&#xD;&#xA;&#x9;&#x9;&#x9;} catch (InterruptedException e) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;// TODO Auto-generated catch block&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;printMessage(Thread.currentThread().getName()+&quot;:Exception-&quot;+e.getMessage());&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;return avgGetTickerData;&#xD;&#xA;&#x9;}" name="runTickerDataAPIConcurrently">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lbh8fY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0oqcJPY9EeynmLUwrt2S0Q" name="Generics">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lcJAPY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_0oqcJfY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0ldXIPY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0oqcJvY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0oqcJ_Y9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <type xmi:id="_0oqcKPY9EeynmLUwrt2S0Q" name="Callable">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lBSQPY9EeynmLUwrt2S0Q"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_0oqcKfY9EeynmLUwrt2S0Q" name="collect">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jbW0PY9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0oqcKvY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jb94PY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_0oqcK_Y9EeynmLUwrt2S0Q" name="Annotations">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jck8PY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0oqcLPY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0oqcLfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_0oqcLvY9EeynmLUwrt2S0Q" name="processRequest">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lSYAPY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0oqcL_Y9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0oqcMPY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_0oqcMfY9EeynmLUwrt2S0Q">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lS_EfY9EeynmLUwrt2S0Q"/>
+        <type xmi:id="_0oqcMvY9EeynmLUwrt2S0Q" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_0oqcM_Y9EeynmLUwrt2S0Q" name="httpClient">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lS_EPY9EeynmLUwrt2S0Q"/>
+        <cardinality xmi:id="_0oqcNPY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+        <type xmi:id="_0oqcNfY9EeynmLUwrt2S0Q" name="HttpClient">
+          <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0lGx0fY9EeynmLUwrt2S0Q"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_0o-lMPY9EeynmLUwrt2S0Q" name="KrakenAssetsAPIPerfCollector" generalizations="_0o9-IPY9EeynmLUwrt2S0Q">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jjSoPY9EeynmLUwrt2S0Q"/>
+    <visualProperties xmi:id="_0o-lMfY9EeynmLUwrt2S0Q" position="399.0,677.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_0o-lMvY9EeynmLUwrt2S0Q" label="+"/>
+    <operations xmi:id="_0o-lM_Y9EeynmLUwrt2S0Q" name="KrakenAssetsAPIPerfCollector">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jj5sPY9EeynmLUwrt2S0Q"/>
+      <keywords xmi:id="_0o-lNPY9EeynmLUwrt2S0Q" keyword="create"/>
+      <visibility xmi:id="_0o-lNfY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o-lNvY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_0o-lN_Y9EeynmLUwrt2S0Q">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jkgwvY9EeynmLUwrt2S0Q"/>
+        <type xmi:id="_0o-lOPY9EeynmLUwrt2S0Q" name="KrakenAssetsAPIPerfCollector">
+          <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jjSoPY9EeynmLUwrt2S0Q"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_0o-lOfY9EeynmLUwrt2S0Q" name="collect">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jkgw_Y9EeynmLUwrt2S0Q"/>
+      <stereotypes xmi:id="_0o-lOvY9EeynmLUwrt2S0Q" name="LegacyStyledElement">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jlH0PY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_0o-lO_Y9EeynmLUwrt2S0Q" name="Annotations">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jlH0fY9EeynmLUwrt2S0Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0o-lPPY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0o-lPfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_0ovUoPY9EeynmLUwrt2S0Q" comments="_0outkPY9EeynmLUwrt2S0Q" targetConnectionVisual="_0outkfY9EeynmLUwrt2S0Q" name="RESTAPIClient">
+    <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0jtqsPY9EeynmLUwrt2S0Q"/>
+    <visualProperties xmi:id="_0ovUofY9EeynmLUwrt2S0Q" position="-475.0,70.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_0ovUovY9EeynmLUwrt2S0Q" label="+"/>
+    <operations xmi:id="_0ovUo_Y9EeynmLUwrt2S0Q" name="main" staticOperation="true">
+      <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0juRwPY9EeynmLUwrt2S0Q"/>
+      <visibility xmi:id="_0ovUpPY9EeynmLUwrt2S0Q" label="+"/>
+      <cardinality xmi:id="_0ovUpfY9EeynmLUwrt2S0Q" label="1" max="1" min="1"/>
+      <parameters xmi:id="_0ovUpvY9EeynmLUwrt2S0Q" name="args">
+        <modelElement href="src/main/java/com/rikhi/experimentation/RESTAPI.uml#_0juRwfY9EeynmLUwrt2S0Q"/>
+        <cardinality xmi:id="_0ovUp_Y9EeynmLUwrt2S0Q" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_0ovUqPY9EeynmLUwrt2S0Q" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
