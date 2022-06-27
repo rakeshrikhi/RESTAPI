@@ -26,7 +26,10 @@ public class RESTAPIClient {
 		//PerformanceDataCollector tickerCollector=new KrakenTickerAPIPerfCollector();
 		//tickerCollector.collect();
 		
-		PerformanceDataCollector tickerCollector=new KrakenAssetsAPIPerfCollector();
-		tickerCollector.collect();
+		//PerformanceDataCollector tickerCollector=new KrakenAssetsAPIPerfCollector();
+		//tickerCollector.collect();
+		
+		PerformanceDataCollector ohlcCollector=new KrakenOHLCAPIPerfCollector();
+		ohlcCollector.collect();
 	}
 }

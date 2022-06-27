@@ -117,6 +117,7 @@ public abstract class KrakenAPIWithArgsPerfCollector extends APIPerfCollector{
 		return avgGetsymbolData;
 	};
 	
+	//ToDo: This method could also be made generic, as its just executing the request
 	public int processRequest(HttpClient httpClient, String symbol) {
 
 		int statusCode = -1;
@@ -129,6 +130,9 @@ public abstract class KrakenAPIWithArgsPerfCollector extends APIPerfCollector{
 
 			statusCode = response.getStatusLine().getStatusCode();
 			printMessage("Received symbol Response for:" + symbol + " as:" + statusCode);
+			
+			//Listen to errors also
+			//looks like status code is 200 but with an error array
 
 			if (statusCode != 200) {
 				printMessage("Failed : symbol:"+symbol+" Response HTTP error code : " + statusCode);

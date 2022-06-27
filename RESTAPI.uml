@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_0dIhkPY9EeynmLUwrt2S0Q" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_0dML8PY9EeynmLUwrt2S0Q" source="codegen">
         <details xmi:id="_0dML8fY9EeynmLUwrt2S0Q" key="codegenDirectory" value="/RESTAPI/src/main/java"/>
-        <details xmi:id="_0oNwMPY9EeynmLUwrt2S0Q" key="AssociatedSourceCode" value="/RESTAPI/src/main/java/com/rikhi/experimentation/APIPerfCollector.java;3969012452/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenAPINoArgsPerfCollector.java;1298942413/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenAPIWithArgsPerfCollector.java;4104618833/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenAssetsAPIPerfCollector.java;2743352462/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenTickerAPIPerfCollector.java;693271688/1;/RESTAPI/src/main/java/com/rikhi/experimentation/PerformanceDataCollector.java;489827111/1;/RESTAPI/src/main/java/com/rikhi/experimentation/PerformanceMetricsData.java;4176037799/1;/RESTAPI/src/main/java/com/rikhi/experimentation/RESTAPIClient.java;940135160/1;"/>
+        <details xmi:id="_0oNwMPY9EeynmLUwrt2S0Q" key="AssociatedSourceCode" value="/RESTAPI/src/main/java/com/rikhi/experimentation/APIPerfCollector.java;3969012452/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenAPINoArgsPerfCollector.java;1298942413/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenAPIWithArgsPerfCollector.java;4104618833/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenAssetsAPIPerfCollector.java;2743352462/1;/RESTAPI/src/main/java/com/rikhi/experimentation/KrakenTickerAPIPerfCollector.java;693271688/1;/RESTAPI/src/main/java/com/rikhi/experimentation/PerformanceDataCollector.java;489827111/1;/RESTAPI/src/main/java/com/rikhi/experimentation/PerformanceMetricsData.java;4176037799/1;/RESTAPI/src/main/java/com/rikhi/experimentation/RESTAPIClient.java;1245195866/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_0jV3QPY9EeynmLUwrt2S0Q">
@@ -381,7 +381,7 @@
             </ownedOperation>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_0jtqsPY9EeynmLUwrt2S0Q" name="RESTAPIClient">
-            <ownedComment xmi:id="_0l4N4PY9EeynmLUwrt2S0Q">
+            <ownedComment xmi:id="__HpKMPZCEeynmLUwrt2S0Q">
               <body>@author Rakesh Rikhi&#xD;
  *</body>
             </ownedComment>
@@ -394,8 +394,11 @@
               <body>//PerformanceDataCollector tickerCollector=new KrakenTickerAPIPerfCollector();&#xD;
 		//tickerCollector.collect();&#xD;
 		&#xD;
-		PerformanceDataCollector tickerCollector=new KrakenAssetsAPIPerfCollector();&#xD;
-		tickerCollector.collect();&#xD;
+		//PerformanceDataCollector tickerCollector=new KrakenAssetsAPIPerfCollector();&#xD;
+		//tickerCollector.collect();&#xD;
+		&#xD;
+		PerformanceDataCollector ohlcCollector=new KrakenOHLCAPIPerfCollector();&#xD;
+		ohlcCollector.collect();&#xD;
 	</body>
             </ownedBehavior>
             <ownedOperation xmi:id="_0juRwPY9EeynmLUwrt2S0Q" name="main" isStatic="true" method="_0l3m0PY9EeynmLUwrt2S0Q">
