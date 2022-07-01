@@ -10,6 +10,7 @@ public class KrakenTickerAPIPerfCollector extends KrakenAPIWithArgsPerfCollector
 		perfMetrics.numberOfConcurrentClients=MAX_NUM_CONCURRENT_CLIENTS;
 		symbols = new String[]{"XBTUSD", "XBTGBP"};
 		apiString="https://api.kraken.com/0/public/Ticker?pair=";
+		featureName="KrakenTickersAPI";
 	}
 	
 	@Override

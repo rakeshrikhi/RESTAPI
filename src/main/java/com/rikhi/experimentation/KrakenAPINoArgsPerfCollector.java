@@ -20,6 +20,7 @@ public abstract class KrakenAPINoArgsPerfCollector extends APIPerfCollector{
 	
 	@Override
 	public void collect() {
+		printMessage("Starting the "+featureName+" collectors with "+MAX_NUM_CONCURRENT_CLIENTS+" parallel threads");
 		ExecutorService executorService = Executors.newFixedThreadPool(MAX_NUM_CONCURRENT_CLIENTS);
 		List<Callable<Double>> taskList = new ArrayList<Callable<Double>>(MAX_NUM_CONCURRENT_CLIENTS);
 		List<Future<Double>> futures;
@@ -47,12 +48,13 @@ public abstract class KrakenAPINoArgsPerfCollector extends APIPerfCollector{
 			e.printStackTrace();
 		}
 		
-		printMessage("runTickerDataAPIConcurrently Avg:"+avgForAPI);
+		printMessage( featureName+" Avg:"+avgForAPI);
 		perfMetrics.avgRequestExecTimePerClient=avgForAPI;
 		perfMetrics.successfulResponsesPercent=
 				(100*(perfMetrics.numberOfSuccessfulResponses.get()))/perfMetrics.numberOfRequests.get();
 		
 		try {
+			printMessage("collectors shutdown in progress");
 			executorService.awaitTermination(10, TimeUnit.SECONDS);//wait for 10 seconds
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -60,8 +62,7 @@ public abstract class KrakenAPINoArgsPerfCollector extends APIPerfCollector{
 		}
 		executorService.shutdownNow();
 		
-		printMessage("perfMetrics:"+perfMetrics);
-
+		printMessage("perfMetrics summary:"+perfMetrics);
 	}
 	
 	public Callable<Double> runTickerDataAPIConcurrently = () -> {
